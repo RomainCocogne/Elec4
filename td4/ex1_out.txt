@@ -1,3 +1,0 @@
-un petit message test qui doit être recopié dans 
-ex1_out.txt
-
