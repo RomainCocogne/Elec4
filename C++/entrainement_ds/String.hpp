@@ -9,8 +9,8 @@ private:
 	char *s;
 	int lg;
 public:
-	String(char * str): s(str), lg(strlen(str)){}
-	
+	String(char* const str): s(str), lg(strlen(str)){}
+
 	String (const String &str){
 		this->s = new char[str.lg+1];
 		this->lg=str.lg;

@@ -1,5 +1,7 @@
 #include "Polygone.hpp"
 #include "String.hpp"
+#include "ListeChainee.hpp"
+#include "PileChainee.hpp"
 #include <iostream>
 int main(int argc, char const *argv[])
 {
