@@ -520,65 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "td7/pile_chainee.hpp",
+			"file": "td4/1_copie_fichier.cpp",
 			"settings":
 			{
-				"buffer_size": 1895,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "td7/pile_tableau.hpp",
-			"settings":
-			{
-				"buffer_size": 1215,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "td7/2_pile.cpp",
-			"settings":
-			{
-				"buffer_size": 735,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "td7/pile.hpp",
-			"settings":
-			{
-				"buffer_size": 482,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "td7/figure.hpp",
-			"settings":
-			{
-				"buffer_size": 437,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "td7/rectangle.hpp",
-			"settings":
-			{
-				"buffer_size": 1094,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "td7/1_heritage.cpp",
-			"settings":
-			{
-				"buffer_size": 1002,
-				"encoding": "UTF-8",
+				"buffer_size": 937,
 				"line_ending": "Unix"
 			}
 		}
@@ -790,20 +735,22 @@
 	"expanded_folders":
 	[
 		"/home/romain/Bureau/Elec4/C++",
-		"/home/romain/Bureau/Elec4/C++/td6",
-		"/home/romain/Bureau/Elec4/C++/td7"
+		"/home/romain/Bureau/Elec4/C++/td4"
 	],
 	"file_history":
 	[
+		"/home/romain/Bureau/Elec4/C++/td7/1_heritage.cpp",
 		"/home/romain/Bureau/Elec4/C++/td7/rectangle.hpp",
+		"/home/romain/Bureau/Elec4/C++/td7/figure.hpp",
+		"/home/romain/Bureau/Elec4/C++/td7/pile.hpp",
+		"/home/romain/Bureau/Elec4/C++/td7/2_pile.cpp",
+		"/home/romain/Bureau/Elec4/C++/td7/pile_tableau.hpp",
+		"/home/romain/Bureau/Elec4/C++/td7/pile_chainee.hpp",
 		"/home/romain/Bureau/Elec4/C++/td7/ellipse.hpp",
 		"/home/romain/Bureau/Elec4/C++/td7/carre.hpp",
 		"/home/romain/Bureau/Elec4/C++/td7/cercle.hpp",
 		"/home/romain/Bureau/Elec4/C++/td6/rectangle.hpp",
 		"/home/romain/Bureau/Elec4/C++/td6/2_pile.cpp",
-		"/home/romain/Bureau/Elec4/C++/td7/pile.hpp",
-		"/home/romain/Bureau/Elec4/C++/td7/figure.hpp",
-		"/home/romain/Bureau/Elec4/C++/td7/1_heritage.cpp",
 		"/home/romain/Bureau/Elec4/C++/td6/pile_chainee.hpp",
 		"/home/romain/Bureau/Elec4/C++/td6/pile_tableau.hpp",
 		"/home/romain/Bureau/Elec4/C++/td6/1_generic.cpp",
@@ -919,10 +866,7 @@
 		"/etc/mysql/my.cnf",
 		"/home/romain/page.php",
 		"/home/romain/img.html",
-		"/home/romain/page.html",
-		"/home/romain/Documents/C/projet/file.h",
-		"/home/romain/Documents/C/td15/data.h",
-		"/home/romain/Documents/C/td15/callbacks.h"
+		"/home/romain/page.html"
 	],
 	"find":
 	{
@@ -981,35 +925,32 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "td7/pile_chainee.hpp",
-					"semi_transient": false,
+					"file": "td4/1_copie_fichier.cpp",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1895,
+						"buffer_size": 937,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1831,
-								1831
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"SL.13.region_keys":
+							"SL.35.region_keys":
 							[
 							],
-							"SL.24.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
+							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -1017,238 +958,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 815.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "td7/pile_tableau.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								940,
-								940
-							]
-						],
-						"settings":
-						{
-							"SL.14.region_keys":
-							[
-							],
-							"SL.25.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 749.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "td7/2_pile.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								735,
-								735
-							]
-						],
-						"settings":
-						{
-							"SL.15.region_keys":
-							[
-							],
-							"SL.27.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Deviot (Arduino IDE)/deviot.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 85.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "td7/pile.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 482,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								297,
-								297
-							]
-						],
-						"settings":
-						{
-							"SL.16.region_keys":
-							[
-							],
-							"SL.33.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 88.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "td7/figure.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"SL.17.region_keys":
-							[
-							],
-							"SL.34.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "td7/rectangle.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1094,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								244,
-								244
-							]
-						],
-						"settings":
-						{
-							"SL.44.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "td7/1_heritage.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1002,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								428,
-								428
-							]
-						],
-						"settings":
-						{
-							"SL.16.region_keys":
-							[
-							],
-							"SL.27.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Deviot (Arduino IDE)/deviot.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
