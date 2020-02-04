@@ -1,0 +1,212 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/roco2/Desktop/Elec4/vhdl/td/td6
+Ecell
+Z0 w1574684661
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4
+Z6 8C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/cell.vhd
+Z7 FC:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/cell.vhd
+l0
+L5
+VWT]0?OIfN>@mOn?Jk;gbM3
+!s100 <[G:BAlN8^XILQgmC>RIN2
+Z8 OP;C;10.4a;61
+32
+Z9 !s110 1574684664
+!i10b 1
+Z10 !s108 1574684664.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/cell.vhd|
+Z12 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/cell.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+Acell_dataflow
+R1
+R2
+R3
+R4
+DEx4 work 4 cell 0 22 WT]0?OIfN>@mOn?Jk;gbM3
+l16
+L13
+VN:l9MGIYX<_[bc]f@5o2l2
+!s100 Sfa;=]G?@E:QV=GbIgQDn1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efifo
+Z15 w1574689791
+Z16 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z17 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+R1
+R2
+R3
+R4
+R5
+Z18 8fifo.vhd
+Z19 Ffifo.vhd
+l0
+L6
+VZ<ehB?Y=1QJYg1>kMS>S01
+!s100 Y2eRZ`JBTaWO_JjcGkC9S2
+R8
+32
+Z20 !s110 1574692324
+!i10b 1
+Z21 !s108 1574692323.000000
+Z22 !s90 -reportprogress|300|fifo.vhd|
+Z23 !s107 fifo.vhd|
+!i113 1
+o-O0
+R14
+Artl
+R16
+R17
+R1
+R2
+R3
+R4
+Z24 DEx4 work 4 fifo 0 22 Z<ehB?Y=1QJYg1>kMS>S01
+l27
+L20
+VHlfFUO2e34REFM`HFQ5AB1
+!s100 F=NN4Gz2akEU^Lg:O;U2n0
+R8
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+o-O0
+R14
+Eoperateur
+Z25 w1574624628
+R1
+R2
+R3
+R4
+R5
+Z26 8C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/operateur.vhd
+Z27 FC:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/operateur.vhd
+l0
+L5
+Va?Vkc6YH^US=Sk8c?^L9h2
+!s100 ^A6iL=2jdn;E:AgNb<7ZM2
+R8
+32
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/operateur.vhd|
+Z29 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/operateur.vhd|
+!i113 1
+R13
+R14
+Aoperateur_dataflow
+R1
+R2
+R3
+R4
+DEx4 work 9 operateur 0 22 a?Vkc6YH^US=Sk8c?^L9h2
+l28
+L17
+VAkGGXzSgP4eeGHZ3?;4BQ1
+!s100 UClh8_@jIgF`h@M=emVBh3
+R8
+32
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Etest
+Z30 w1574692319
+R1
+R2
+R3
+R4
+R5
+Z31 8testbench_fifo.vhd
+Z32 Ftestbench_fifo.vhd
+l0
+L4
+VGXK0naKUV0VB1?zbE=5V;2
+!s100 A_zNdPnZ14A`i0W]MCz]E0
+R8
+32
+R20
+!i10b 1
+Z33 !s108 1574692324.000000
+Z34 !s90 -reportprogress|300|testbench_fifo.vhd|
+Z35 !s107 testbench_fifo.vhd|
+!i113 1
+o-O0
+R14
+Atestbench_fifo
+R16
+R17
+R24
+R1
+R2
+R3
+R4
+Z36 DEx4 work 4 test 0 22 GXK0naKUV0VB1?zbE=5V;2
+l31
+L7
+V06NR2XkI<4DAQEEPh?IzM3
+!s100 zzKX]j]z=JSE]0LSUY`m82
+R8
+32
+R20
+!i10b 1
+R33
+R34
+R35
+!i113 1
+o-O0
+R14
+Atestbench
+R1
+R2
+R3
+R4
+DEx4 work 4 test 0 22 j7K7_=R]FOZmA[ec@HB=T3
+l25
+L8
+V4KA5_R6BUeWXk^THzl4cd2
+!s100 =hW^UaIiN@EcA[YboX0l@0
+R8
+32
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/testbench.vhd|
+!s107 C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/testbench.vhd|
+!i113 1
+R13
+R14
+FC:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/testbench.vhd
+w1574682202
+8C:/Users/roco2/Desktop/Elec4/vhdl/tp/tp4/testbench.vhd

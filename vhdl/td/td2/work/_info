@@ -1,0 +1,220 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/roco2/Desktop/Elec4/vhdl/td/td1
+Ecomb
+Z0 w1570631272
+Z1 dC:/Users/roco2/Desktop/Elec4/vhdl/td/td2
+Z2 8C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo1.vhd
+Z3 FC:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo1.vhd
+l0
+L2
+V1k3CPzfYaWJciZNEdP>SM3
+!s100 g]7h]YAdJ0>6CaJTR7l[S0
+Z4 OP;C;10.4a;61
+32
+Z5 !s110 1570632903
+!i10b 1
+Z6 !s108 1570632903.000000
+Z7 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo1.vhd|
+Z8 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo1.vhd|
+!i113 1
+Z9 o-work work -2002 -explicit -O0
+Z10 tExplicit 1
+Abeh
+DEx4 work 4 comb 0 22 1k3CPzfYaWJciZNEdP>SM3
+l11
+L9
+VnQ89V2e1T>mIH14VQeS3d1
+!s100 HGC=6^@M?DgkFG5]lALmY3
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Ecompteur
+Z11 w1570603164
+R1
+Z12 8C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/compt_modulo_6.vhd
+Z13 FC:/Users/roco2/Desktop/Elec4/vhdl/td/td2/compt_modulo_6.vhd
+l0
+L1
+VoF:9C>S4FFF4TC:LKni@71
+!s100 ?VgcY5>Mfz[dJMU4oAmdN2
+R4
+32
+Z14 !s110 1570605290
+!i10b 1
+Z15 !s108 1570605290.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/compt_modulo_6.vhd|
+Z17 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/compt_modulo_6.vhd|
+!i113 1
+R9
+R10
+Abeh
+DEx4 work 8 compteur 0 22 oF:9C>S4FFF4TC:LKni@71
+l11
+L10
+VKCGKBo[N0TmIlnPYZ1J4z1
+!s100 <AELSN=@3:_Bzd<zYZkKY1
+R4
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R9
+R10
+Edecodeur
+Z18 w1570604121
+R1
+Z19 8C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/decodeur.vhd
+Z20 FC:/Users/roco2/Desktop/Elec4/vhdl/td/td2/decodeur.vhd
+l0
+L1
+VdcolK3HeSd3m;TcG>ecAh3
+!s100 7gHe3d92o@JL]H6Fcb>1S3
+R4
+32
+R14
+!i10b 1
+R15
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/decodeur.vhd|
+Z22 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/decodeur.vhd|
+!i113 1
+R9
+R10
+Abeh
+DEx4 work 8 decodeur 0 22 dcolK3HeSd3m;TcG>ecAh3
+l10
+L9
+VNg1PZkea`GE9;Rm3H=YY=0
+!s100 KZ=enjSaOBcbWh5M1EzKS0
+R4
+32
+R14
+!i10b 1
+R15
+R21
+R22
+!i113 1
+R9
+R10
+Egenerateur
+Z23 w1570605285
+R1
+Z24 8C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/generateur.vhd
+Z25 FC:/Users/roco2/Desktop/Elec4/vhdl/td/td2/generateur.vhd
+l0
+L1
+VIEhgCJ_7I3lZZXe70G2kb3
+!s100 =iD_OPPiJWoF7E6aU^]O<1
+R4
+32
+Z26 !s110 1570605291
+!i10b 1
+Z27 !s108 1570605291.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/generateur.vhd|
+Z29 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/generateur.vhd|
+!i113 1
+R9
+R10
+Abeh
+DEx4 work 10 generateur 0 22 IEhgCJ_7I3lZZXe70G2kb3
+l10
+L9
+Vj=@a=H^@kzcHYzO0mS=kT2
+!s100 Ahm3daJX[MVNXGEooAGi:0
+R4
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R9
+R10
+Elatch
+Z30 w1570632171
+R1
+Z31 8C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo2.vhd
+Z32 FC:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo2.vhd
+l0
+L2
+Vm0n@TN=bQ8XmI]fC[AV7Q2
+!s100 <10D`^]_fP_=Z5ZLzUBYd1
+R4
+32
+Z33 !s110 1570632904
+!i10b 1
+Z34 !s108 1570632904.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo2.vhd|
+Z36 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo2.vhd|
+!i113 1
+R9
+R10
+Abeh
+Z37 DEx4 work 5 latch 0 22 m0n@TN=bQ8XmI]fC[AV7Q2
+l11
+L10
+Z38 V@aPEzi@@^E^h2RGzP_kBS0
+Z39 !s100 IBd3R>HP?4h2lE:I9bhW[1
+R4
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R9
+R10
+Etest
+Z40 w1570632893
+R1
+Z41 8C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/bench.vhd
+Z42 FC:/Users/roco2/Desktop/Elec4/vhdl/td/td2/bench.vhd
+l0
+L1
+VAM^HdOGE^SS[=oDKI0aie1
+!s100 0m7HI4F_nQB8g7lhz`_?Y1
+R4
+32
+R33
+!i10b 1
+R34
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/bench.vhd|
+Z44 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/bench.vhd|
+!i113 1
+R9
+R10
+Abench
+DEx4 work 4 test 0 22 AM^HdOGE^SS[=oDKI0aie1
+l14
+L4
+V[9m?S6h[4G6<ERBXL9Zg52
+!s100 <_GUmH]b_TRo_TZle2K1`0
+R4
+32
+R33
+!i10b 1
+R34
+R43
+R44
+!i113 1
+R9
+R10

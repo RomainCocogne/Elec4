@@ -1,0 +1,22 @@
+
+
+entity genpwm is
+	port (
+		CV:		natural range 0 to 255;
+		rst,clk:	bit;
+		pwm:		out bit
+	);
+end entity;
+
+
+architecture beh of genpwm is
+	signal cpt:		natural range 0 to 255;
+	constant tco:		time := 4 ns;
+	constant tcomb:		time := 6 ns;
+begin 
+	pwm <= '1'	
+		when cpt < CV	else '0'	after tcomb;
+	cpt <= 0	
+		when rst = '0'	else (cpt + 1) mod 256	after tco
+					when clk = '1' and clk'event;
+end beh;

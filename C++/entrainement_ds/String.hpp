@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <cstring>
+#include "..\td8\IndexException.hpp"
 
 class String
 {
@@ -19,7 +20,7 @@ public:
 		this->s[lg] = '\0';
 	}
 	~String(){}
-	
+
 	friend std::ostream& operator << (std::ostream &f, String &str){
 		for (int i = 0; i < str.lg; ++i)
 		{
@@ -28,9 +29,8 @@ public:
 		return f;
 	}
 	char &operator [] (int i){
-		if (i<lg)
-			return this->s[i];
-		return this->s[lg];
+		if (i <0 || i>=lg) throw IndexException("Index error");
+        return this->s[i];
 	}
 
 	String &operator= (const String &str){

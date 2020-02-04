@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/roco2/Desktop/Elec4/vhdl/td/td4
+Epgcd
+Z0 w1571816454
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/roco2/Desktop/Elec4/vhdl/td/td5
+Z6 8C:/Users/roco2/Desktop/Elec4/vhdl/td/td5/pgcd.vhd
+Z7 FC:/Users/roco2/Desktop/Elec4/vhdl/td/td5/pgcd.vhd
+l0
+L5
+Vf9VZcGAlmjU[PTe1iPaf80
+!s100 Ff:<;=5CK^_]o@1Z8?;W]2
+Z8 OP;C;10.4a;61
+32
+!s110 1571816460
+!i10b 1
+Z9 !s108 1571816460.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/roco2/Desktop/Elec4/vhdl/td/td5/pgcd.vhd|
+Z11 !s107 C:/Users/roco2/Desktop/Elec4/vhdl/td/td5/pgcd.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Artl
+R1
+R2
+R3
+R4
+Z14 DEx4 work 4 pgcd 0 22 f9VZcGAlmjU[PTe1iPaf80
+l29
+L15
+V3lEF`@TL@4zi9;FhB;baV0
+!s100 4lP6`Z0^T08];A07<X9:m1
+R8
+32
+!s110 1571816461
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

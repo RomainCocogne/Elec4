@@ -1,0 +1,10 @@
+entity accumulateur is 
+	generic (N : natural :=2);
+	port( 
+		rst : in bit;
+		ld : in bit;
+		B : in natural range 0 to N-1;
+		A : out natural range 0 to N-1
+	);
+end accumulateur;
+

@@ -1,0 +1,10 @@
+entity faf is
+	port(
+		a,b,ci:	bit;
+		s:	out bit
+	);
+end entity;
+
+architecture dataflow of faf is
+
+end architecture;

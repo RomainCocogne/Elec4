@@ -1,0 +1,35 @@
+
+entity detseq is
+	port(
+		rst,X,clk:	bit;
+		z:		out bit
+	);
+end entity;
+
+architecture rtlm of detseq is
+	type defetat is (Q0,Q1,Q2,Qf,Qg);
+	signal etat, netat: defetat;
+begin 
+	mem: process(clk,rst)
+	begin
+		if rst = '1' then
+			etat <= Q0;
+		elsif clk ='1' and clk'event then
+			etat <= netat;
+		end if;
+	end process;
+	
+	comb: process(etat,X)
+	begin
+		z <= '0';
+		netat <= etat;
+
+		case etat is
+			when Q0 => if X = '1' then netat <= Q1; end if;
+			when Q1 => if X = '1' then netat <= Q2; else netat <= Q0; end if;
+			when Q2 => if X = '1' then netat <= Qf; else netat <= Q0; end if;
+			when Qf => netat <= Qg;
+			when Qg => null;
+		end case;
+	end process;
+end rtlm;

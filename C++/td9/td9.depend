@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1579596340 source:c:\users\roco2\desktop\elec4\c++\td9\main.cpp
+	<iostream>
+	"animaux.hpp"
+
+1579598912 c:\users\roco2\desktop\elec4\c++\td9\animaux.hpp
+	<iostream>
+

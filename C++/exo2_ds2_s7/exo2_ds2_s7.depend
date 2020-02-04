@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1579523708 source:c:\users\roco2\desktop\elec4\c++\exo2_ds2_s7\main.cpp
+	<iostream>
+	"exo2.hpp"
+
+1579523041 c:\users\roco2\desktop\elec4\c++\exo2_ds2_s7\exo2.hpp
+	<iostream>
+	<sstream>
+

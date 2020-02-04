@@ -1,0 +1,21 @@
+entity generateur is
+	generic (N:	natural :=4);
+	port (
+		E:	bit_vector (0 to N-1);
+		P:	out bit
+	);
+end entity;
+
+architecture beh of generateur is
+begin
+	process (E)
+	variable b: bit;
+	begin
+		b := E(0);
+		for i in 1 to N loop		
+			b:= b xor E(i);
+		end loop;
+		P <= b;
+	end process;
+end architecture;
+		

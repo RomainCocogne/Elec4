@@ -1,0 +1,31 @@
+C:/Users/roco2/Desktop/Elec4/vhdl/entrainement_ds/regas.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\roco2\Desktop\Elec4\vhdl\entrainement_ds\regas.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity regas
+-- Compiling architecture dataflow of regas
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/entrainement_ds/addsub.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/entrainement_ds/addsub.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity addsub
+-- Compiling architecture bah of addsub
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/entrainement_ds/fai.vhd {2 {vcom -work work -2002 -explicit -stats=none {C:\Users\roco2\Desktop\Elec4\vhdl\entrainement_ds\fai.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity fai
+-- Compiling architecture alg of fai
+** Warning: C:\Users\roco2\Desktop\Elec4\vhdl\entrainement_ds\fai.vhd(15): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/entrainement_ds/faf.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/entrainement_ds/faf.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity faf
+-- Compiling architecture dataflow of faf
+
+} {} {}}

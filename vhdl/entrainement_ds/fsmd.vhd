@@ -1,0 +1,62 @@
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.std_logic_unsigned.all;
+
+entity mult is
+	port (
+		h,start:	std_logic;
+		m,n:	std_logic_vector(7 downto 0);
+		fin:	out std_logic;
+		r:	out std_logic_vector(15 downto 0)
+	);
+end entity;
+
+architecture dataflow of mult is
+
+	constant tmux:	time:= 5 ns;
+	constant tco:	time:=3 ns;
+
+	signal c1,c2,z:	std_logic;
+	signal i,ni:	std_logic_vector (7 downto 0);
+	signal rint,mr:	std_logic_vector (15 downto 0);
+
+	type defetat is (t0,t1);
+	signal etat,netat:	defetat;
+begin
+	r	<=	rint;
+	mr	<=	"0000000000000000" after tmux when c1 = '1'
+			else (rint + m) after tmux when c1 = '0';
+	rint	<=	mr after tco when  (c1 or c2) = '1' and h='1' and h'event;
+
+	z	<=	'1' when i=0 else '0';
+	ni	<=	n after tmux when c1 = '1' else i-1;
+	i	<=	ni after tco when (c1 or c2) = '1' and h='1' and h'event;
+
+seq:process(h)
+begin
+	if h='1' and h'event then
+		etat <= netat;	
+	end if;
+end process;
+
+comb: process (start,etat,z)
+begin
+	c1 <='0'; c2 <= '0'; fin <='0'; netat <= etat;
+	case etat is
+	when t0 =>
+		if start = '1' then 
+			c1 <= '1'; netat <= t1; end if;
+	when t1 =>
+		if z= '1' then netat <= t0; fin <= '1';
+		else c2 <= '1'; end if;
+	end case;
+end process;
+end architecture;
+
+
+
+
+
+
+
+

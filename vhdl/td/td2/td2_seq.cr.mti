@@ -1,0 +1,19 @@
+C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/compt_modulo_6.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/compt_modulo_6.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity compteur
+-- Compiling architecture beh of compteur
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/decodeur.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/decodeur.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity decodeur
+-- Compiling architecture beh of decodeur
+
+} {} {}} generateur.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/generateur.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity generateur
+-- Compiling architecture beh of generateur
+
+} {} {}}

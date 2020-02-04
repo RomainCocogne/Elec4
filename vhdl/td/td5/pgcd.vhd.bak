@@ -1,0 +1,81 @@
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.std_logic_unsigned.all;
+
+entity pgcd is
+	
+	port (
+		a,b:		std_logic_vector (7 downto 0);
+		go,rst,h:	std_logic;
+		fin:		out std_logic;
+		p:		out std_logic_vector (7 downto 0)
+	);
+end entity;
+
+architecture rtl of pgcd is
+
+	signal sub,m1,m2,x,y,mx,my:		std_logic_vector(7 downto 0);
+	signal eq,sup,c3,c2,c1,f:		std_logic;
+
+	type defetat is (t0,t1,t2);
+	signal etat,netat:			defetat;
+
+	constant tsub:		time := 10 ns;
+	constant tmux:		time := 5 ns;
+	constant tcmp:		time := 3 ns;
+	constant tco:		time := 2 ns;
+	constant toe:		time := 1 ns;
+
+begin
+	sub	<= m1-m2 after tsub;
+	eq	<= '1' after tcmp when x=y else '0' after tcmp;
+	sup	<= '1' after tcmp when x>y else '0' after tcmp;
+
+	m1	<= x after tmux when c3='1' else y after tmux;
+	m2	<= y after tmux when c3='1' else x after tmux;
+
+	x	<= mx after tco when (c1='1' or c3='1') and h='1' and h'event;
+	y	<= my after tco when (c1='1' or c2='1') and h='1' and h'event;
+
+	mx	<= a after tmux when c1='1' else sub after tmux;
+	my	<= b after tmux when c1='1' else sub after tmux;
+
+	p	<= x after toe when f='1' else (others =>'Z') after toe;
+	fin	<= f;
+
+	m: process (h,rst)
+	begin
+		if rst='0' then etat <= t0;
+		elsif h='1' and h'event then 
+			etat <= netat after tco;
+		end if;
+	end process;
+
+	comb: process (go,etat,eq,sup)
+	begin
+		netat	<= etat;
+		c1	<= '0'; 
+		c2	<= '0';
+		c3	<= '0';
+
+		case etat is
+			when t0	=> 
+				if go='1' then 
+					c1='1';
+					netat	<= t1;
+				end if;
+
+			when t1	=>
+				if eq='0' then
+					if sup='0' then
+						c3	<= '1';
+					else 	c2	<= '1';
+					end if;
+				else 	netat	<= t2;
+				end if;
+			when t2	=>
+				netat	<= t0;
+				f	<='1';
+		end case;
+	end process;
+end architecture;

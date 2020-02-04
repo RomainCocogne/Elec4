@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1579259008 source:c:\users\roco2\desktop\elec4\c++\entrainement_ds\main.cpp
+	"Polygone.hpp"
+	"String.hpp"
+	"ListeChainee.hpp"
+	"PileChainee.hpp"
+	<iostream>
+
+1576179042 c:\users\roco2\desktop\elec4\c++\entrainement_ds\polygone.hpp
+	"Point.hpp"
+	<vector>
+
+1576178495 c:\users\roco2\desktop\elec4\c++\entrainement_ds\point.hpp
+	<ostream>
+
+1579259153 c:\users\roco2\desktop\elec4\c++\entrainement_ds\string.hpp
+	<iostream>
+	<cstring>
+	"..\td8\IndexException.hpp"
+
+1576246870 c:\users\roco2\desktop\elec4\c++\entrainement_ds\listechainee.hpp
+	"Liste.hpp"
+
+1576246964 c:\users\roco2\desktop\elec4\c++\entrainement_ds\liste.hpp
+
+1579173188 c:\users\roco2\desktop\elec4\c++\entrainement_ds\pilechainee.hpp
+	"ListeChainee.hpp"
+	"Pile.hpp"
+
+1576246957 c:\users\roco2\desktop\elec4\c++\entrainement_ds\pile.hpp
+	"Liste.hpp"
+
+1579011827 c:\users\roco2\desktop\elec4\c++\td8\indexexception.hpp
+	<string>
+

@@ -1,0 +1,18 @@
+
+entity comb is
+	port (
+		a,b:	bit;
+		s:	out bit
+	);
+end entity;
+
+architecture beh of comb is
+begin
+	process (a,b)
+	variable x:	bit;
+	begin
+		x := not a;
+		s <= b and x;
+	end process;
+		
+end beh;	

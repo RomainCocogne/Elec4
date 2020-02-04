@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1580739428 source:c:\users\roco2\desktop\elec4\c++\td10\main.cpp
+	<iostream>
+	"Pile.hpp"
+
+1580736375 source:c:\users\roco2\desktop\elec4\c++\td10\vector_iterator.cpp
+	<iostream>
+	<vector>
+
+1580739489 c:\users\roco2\desktop\elec4\c++\td10\pile.hpp
+	<forward_list>
+	<iostream>
+	<sstream>
+

@@ -1,0 +1,33 @@
+C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/compteur.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/compteur.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity compteur
+-- Compiling architecture structure of compteur
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/test.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/test.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity test
+-- Compiling architecture simu of test
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/pwm.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/pwm.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity genpwm
+-- Compiling architecture beh of genpwm
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/cmt_bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/cmt_bit.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity bit0
+-- Compiling entity biti
+-- Compiling architecture rtl of bit0
+-- Compiling architecture rtl of biti
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/machine_a_etat.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td4/machine_a_etat.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity detseq
+-- Compiling architecture rtlm of detseq
+
+} {} {}}

@@ -1,0 +1,19 @@
+C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo1.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity comb
+-- Compiling architecture beh of comb
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/exo2.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity latch
+-- Compiling architecture beh of latch
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/bench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/roco2/Desktop/Elec4/vhdl/td/td2/bench.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity test
+-- Compiling architecture bench of test
+
+} {} {}}

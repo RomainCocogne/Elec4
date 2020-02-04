@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1579011600 source:c:\users\roco2\desktop\elec4\c++\td8\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<exception>
+	"MonException.hpp"
+	"MonException1.hpp"
+	"MonException2.hpp"
+	"Tableau.hpp"
+	"../td4/complexe.hpp"
+
+1578383964 c:\users\roco2\desktop\elec4\c++\td8\monexception.hpp
+	<iostream>
+
+1578384761 c:\users\roco2\desktop\elec4\c++\td8\monexception1.hpp
+
+1578385164 c:\users\roco2\desktop\elec4\c++\td8\monexception2.hpp
+	"MonException1.hpp"
+
+1579011655 c:\users\roco2\desktop\elec4\c++\td8\tableau.hpp
+	<iostream>
+	<sstream>
+	<initializer_list>
+	"IndexOverFlow.hpp"
+	"IndexUnderFlow.hpp"
+
+1571740782 c:\users\roco2\desktop\elec4\c++\td4\complexe.hpp
+	<iostream>
+	<cmath>
+	<fstream>
+
+1579011819 c:\users\roco2\desktop\elec4\c++\td8\indexoverflow.hpp
+	"IndexException.hpp"
+
+1579011814 c:\users\roco2\desktop\elec4\c++\td8\indexunderflow.hpp
+	"IndexException.hpp"
+
+1579011827 c:\users\roco2\desktop\elec4\c++\td8\indexexception.hpp
+	<string>
+

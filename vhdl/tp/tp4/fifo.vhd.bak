@@ -1,0 +1,51 @@
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.std_logic_unsigned.all;
+	use ieee.std_logic_misc.all;
+
+entity fifo is
+	generic (
+		deep:	natural :=1;
+		wide:	natural :=1
+	);
+	port (
+		rst,rw,enable,h:	std_logic;
+		datain:	std_logic_vector (wide-1 downto 0);
+		dataout:	out std_logic_vector (wide-1 downto 0);
+		full,empty:	out std_logic		
+	);
+end entity;
+
+
+architecture rtl of fifo is
+	type memfifo is array (0 to (2**deep)-1) of std_logic_vector(wide-1 downto 0);
+	signal reg:	memfifo;
+	signal ud,ld:	std_logic;
+	signal Qdeep:	std_logic_vector (deep downto 0);
+	signal mux:	std_logic_vector (wide-1 downto 0);
+
+begin
+	ud	<=	(not rw) and enable;
+
+	Qdeep	<=	(others => '1') when rst = '1'
+			else Qdeep + '1' when (h = '1' and h'event and ud = '0' and enable = '1')
+			else Qdeep - '1' when (h = '1' and h'event and ud = '1' and enable = '1')
+			else Qdeep when (enable = '0');
+
+	empty	<=	AND_REDUCE(Qdeep); --empty = Qdeep and 1111...111
+	full	<=	'1' when AND_REDUCE(Qdeep (deep-1 downto 0)) = '1' and Qdeep(deep) = '0' else '0';
+	
+	ld	<=	rw and enable;
+	reg(0)	<=	(others => '0') when rst ='1'
+			else datain when (ld='1' and h='1' and h'event)
+			else reg(0) when ld = '0';
+	registres: for i in 1 to (2**deep)-1 generate
+		reg(i)	<=	(others => '0') when rst='1'
+				else reg (i-1) when (ld='1' and h='1' and h'event)
+				else reg(i) when ld='0';
+	end generate;
+
+	mux	<=	reg (conv_integer(Qdeep(deep-1 downto 0)));
+	dataout	<=	mux when rw = '0' else (others => 'Z');
+			
+end architecture;

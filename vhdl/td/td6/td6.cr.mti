@@ -1,0 +1,33 @@
+C:/Users/roco2/Desktop/Elec4/vhdl/td/td6/interface.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\roco2\Desktop\Elec4\vhdl\td\td6\interface.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity interfaceslave
+-- Compiling architecture beh of interfaceslave
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td6/assert.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\roco2\Desktop\Elec4\vhdl\td\td6\assert.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ff
+-- Compiling architecture beh of ff
+
+} {} {}} C:/Users/roco2/Desktop/Elec4/vhdl/td/td6/monostable.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\roco2\Desktop\Elec4\vhdl\td\td6\monostable.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity monostable
+-- Compiling architecture beh of monostable
+-- Compiling architecture redec_beh of monostable
+-- Loading entity monostable
+
+} {} {}}
