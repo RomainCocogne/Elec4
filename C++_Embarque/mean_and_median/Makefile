@@ -27,9 +27,9 @@ CFLAGS_DEBUG       := $(CFLAGS_COMMON) -O -g
 CFLAGS             := $(CFLAGS_COMMON) -O3
 
 
-TARGET             := histogram
+TARGET             := map1
 SRC_FILES          := \
-  ./histogram.cpp
+  ./map1.cpp
 
 
 OBJECT_FILES       := $(addprefix  $(OBJDIR)/,$(notdir $(SRC_FILES:.cpp=.r.o)))
@@ -48,7 +48,7 @@ debug: $(OBJECT_FILES_DEBUG) Makefile
 	$(CC) -o $(TARGET).$@ $(OBJECT_FILES_DEBUG) $(LDFLAGS)
 
 c-version:
-	gcc -O3 -o histogram_c_version ./histogram.c
+#	gcc -O3 -o histogram_c_version ./histogram.c
 
 
 
