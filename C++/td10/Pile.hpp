@@ -8,6 +8,7 @@ template <typename T> class Pile
 {
     public:
         Pile() {}
+        Pile(std::forward_list<T> fl): l(fl){}
 
         void empiler(const T &e){
             l.push_front(e);

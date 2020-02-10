@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Pile.hpp"
-
-
+#include <forward_list>
+/*
 int main()
 {
     Pile<int> i;
@@ -13,5 +13,11 @@ int main()
     i.depiler();
     std::cout << i << std::endl;
     std::cout << "Pile vide: " << i.estVide() << std::endl;
+    std::cout << "------------" << std::endl;
+
+    std::forward_list<std::string> fl = {"toto", "titi", "tata"};
+    Pile<std::string> s (fl);
+    std::cout << s << std::endl;
     return 0;
 }
+*/

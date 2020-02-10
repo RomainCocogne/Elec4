@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-/*
+
 void print_descendant (std::vector<int> v){
     for (std::vector<int>::iterator i = v.end()-1; i >= v.begin(); i--){
         std::cout << *i << std::endl;
@@ -28,4 +28,4 @@ int main()
     print_descendant2(vect);
     return 0;
 }
-*/
+
