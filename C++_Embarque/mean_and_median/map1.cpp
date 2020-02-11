@@ -2,11 +2,11 @@
 // header-start
 //////////////////////////////////////////////////////////////////////////////////
 //
-// \file      histogram.cpp
+// \file      map1.cpp
 //
 // \brief     This file belongs to the C++ tutorial project
 //
-// \author    Bernard
+// \author    Bernard, Romain and Philipe
 //
 // \copyright Copyright [2015] <ng2goodies>
 //            Distributed under the MIT License
@@ -42,38 +42,42 @@ using std::string;
 using std::vector;
 using std::map;
 
-// This simple program reads from a file a set of numbers (double format)
-// computes a running mean value, computes the median after sort
+// Reads files shaped like [key   double_value] for each line
+// and gives a prompt for user to enter a key.
+// the corresponding value is returned
 
-// This program has several problems, can you spot them
+// Somme Macros to ease reading
+#define PROMPT "query> "
+#define EXIT_KEY "END"
 
 int main(int argc, char *argv[]) {
+  // Check if file name is given
   if (argc != 2) {
     std::cerr << "Error, need a file arg" << std::endl;
     return -1;
   }
-
+  // Try to open file
   string file_name{argv[1]};
-  map<string, double> buf;
   std::ifstream fin(file_name, std::ios::in);
   if (!fin.is_open()) {
     std::cerr << "Error, invalid name file"<< std::endl;
     return -1;
   }
 
+  map<string, double> buf;  // Buffer containing file data
   string key;
   double d;
-  while (fin >> key >> d)
+  while (fin >> key >> d)  // Reading file...
     buf[key] = d;
 
   string qin;
-  for (;;) {
-    std::cout << "query> ";
-    std::cin >> qin;
+  for (;;) {  // Enter prompt loop
+    std::cout << PROMPT;
+    std::cin >> qin;  // Get user key
 
-    if (qin == "END") break;
+    if (qin == EXIT_KEY) break;
 
-    if (buf.find(qin) != buf.end())
+    if (buf.find(qin) != buf.end())  // check if key exists
       std::cout << "value[" << qin << "]= " << buf[qin] << std::endl;
     else
       std::cout << "This ID does not exists" << std::endl;

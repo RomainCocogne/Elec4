@@ -27,9 +27,9 @@ CFLAGS_DEBUG       := $(CFLAGS_COMMON) -O -g
 CFLAGS             := $(CFLAGS_COMMON) -O3
 
 
-TARGET             := map2
+TARGET             := map1
 SRC_FILES          := \
-  ./map2.cpp
+  ./map1.cpp
 
 
 OBJECT_FILES       := $(addprefix  $(OBJDIR)/,$(notdir $(SRC_FILES:.cpp=.r.o)))

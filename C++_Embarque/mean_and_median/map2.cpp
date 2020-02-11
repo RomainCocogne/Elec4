@@ -2,11 +2,11 @@
 // header-start
 //////////////////////////////////////////////////////////////////////////////////
 //
-// \file      histogram.cpp
+// \file      map2.cpp
 //
 // \brief     This file belongs to the C++ tutorial project
 //
-// \author    Bernard
+// \author    Bernard, Romain and Philipe
 //
 // \copyright Copyright [2015] <ng2goodies>
 //            Distributed under the MIT License
@@ -41,44 +41,52 @@ using std::string;
 using std::vector;
 using std::map;
 
-// This simple program reads from a file a set of numbers (double format)
-// computes a running mean value, computes the median after sort
+// Reads files shaped like [key   double_value] for each line
+// and gives a prompt for user to enter a key or value.
+// the corresponding value or keys is/are returned
 
-// This program has several problems, can you spot them
+// Somme Macros to ease reading
+#define PROMPT "query> "
+#define EXIT_KEY "END"
+#define VALUE_KEY '+'
+#define VALUE_MARGIN 0.01
 
 int main(int argc, char *argv[]) {
+  // Check if file name is given
   if (argc != 2) {
     std::cerr << "Error, need a file arg" << std::endl;
     return -1;
   }
-
+  // Try to open file
   string file_name{argv[1]};
-  map<string, double> buf;
   std::ifstream fin(file_name, std::ios::in);
   if (!fin.is_open()) {
     std::cerr << "Error, invalid name file"<< std::endl;
     return -1;
   }
 
+  map<string, double> buf;  // Buffer containing file data
   string key;
   double d;
-  while (fin >> key >> d)
+  while (fin >> key >> d)  // Reading file...
     buf[key] = d;
 
   string qin;
-  for (;;) {
-    std::cout << "query> ";
+  for (;;) {  // Enter prompt loop
+    std::cout << PROMPT;
     std::cin >> qin;
 
-    if (qin == "END") break;
+    if (qin == EXIT_KEY) break;
 
-    if (qin[0] == '+') {
+    if (qin[0] == VALUE_KEY) {  // Enter unordered mode
       try {
-        auto val = std::stod(qin);
+        auto val = std::stod(qin);  // Convert input to double
         bool found = false;
 
+        // Search buffer for corresponding keys
         for (auto it = buf.begin(); it != buf.end(); it++) {
-          if (it->second < val*1.01 && it->second > val*0.99) {
+          if (it->second < val*(1+VALUE_MARGIN)
+           && it->second > val*(1-VALUE_MARGIN)) {
             std::cout << "value[" << it->first << "]= "
                       << it->second << std::endl;
             found = true;
@@ -89,7 +97,7 @@ int main(int argc, char *argv[]) {
       } catch (...) {
         std::cerr << "Invalid value" << std::endl;
       }
-    } else {
+    } else {  // Ordered mode
       if (buf.find(qin) != buf.end())
         std::cout << "value[" << qin << "]= " << buf[qin] << std::endl;
       else
