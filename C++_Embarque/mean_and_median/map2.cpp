@@ -36,7 +36,6 @@
 #include <algorithm>
 #include <iomanip>
 #include <map>
-#include <sstream>
 
 using std::string;
 using std::vector;
@@ -73,10 +72,29 @@ int main(int argc, char *argv[]) {
 
     if (qin == "END") break;
 
-    if (buf.find(qin) != buf.end())
-      std::cout << "value[" << qin << "]= " << buf[qin] << std::endl;
-    else
-      std::cout << "This ID does not exists" << std::endl;
+    if (qin[0] == '+') {
+      try {
+        auto val = std::stod(qin);
+        bool found = false;
+
+        for (auto it = buf.begin(); it != buf.end(); it++) {
+          if (it->second < val*1.01 && it->second > val*0.99) {
+            std::cout << "value[" << it->first << "]= "
+                      << it->second << std::endl;
+            found = true;
+          }
+        }
+
+        if (!found) std::cout << "ID not found" << std::endl;
+      } catch (...) {
+        std::cerr << "Invalid value" << std::endl;
+      }
+    } else {
+      if (buf.find(qin) != buf.end())
+        std::cout << "value[" << qin << "]= " << buf[qin] << std::endl;
+      else
+        std::cout << "This ID does not exists" << std::endl;
+    }
   }
 
   std::cout << "Bye..." << std::endl;
