@@ -97,9 +97,9 @@ int main(int argc, char *argv[]) {
   auto b = buf.begin();
   auto n = 0;
 // for each intervals
-  for (int i = 0; i <I_MAX && b != buf.end(); i+=STEP_SIZE) {
+  for (int i = 0; i <I_MAX ; i+=STEP_SIZE) {
     // Count the number of values in interval
-    while (*b < i+STEP_SIZE) {n++; b++;}
+    while (*b < i+STEP_SIZE && b != buf.end()) {n++; b++;}
     // Store the value
     val_in_bin.push_back(n);
     n = 0;

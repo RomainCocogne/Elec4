@@ -19,7 +19,7 @@
 
 // C++ version
 // Compilation with g++ 5.3.0 & g++ 6.3.0
-// mingwin: g++ -std=c++14 -O3 -o mean_and_median mean_and_median.cpp
+// mingwin: g++ -std=c++14 -O3 -o map2 map2.cpp
 
 // Compilation with g++ 4.9.3
 // cygwin:  g++ -D_GLIBCXX_USE_C99 -D_GLIBCXX_USE_C99_DYNAMIC -std=c++14 -O3 ...
