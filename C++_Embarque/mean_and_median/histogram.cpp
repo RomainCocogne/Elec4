@@ -108,7 +108,7 @@ int main(int argc, char *argv[]) {
   // Number of stars coefficient
   auto c = STAR_MAX/(*max_element(val_in_bin.begin(), val_in_bin.end()));
 
-  for (uint j = 0; j < val_in_bin.size(); j++) {  // Print histogram
+  for (unsigned int j = 0; j < val_in_bin.size(); j++) {  // Print histogram
     std::cout << std::setw(4) << j*100 << std::setw(6)
               << val_in_bin[j] << " " << string(c*val_in_bin[j], '*')
               << std::endl;
