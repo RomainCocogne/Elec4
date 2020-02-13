@@ -57,12 +57,12 @@ int main(int argc, char const *argv[]) {
   // Generate normal distribution
   std::random_device rd{};
   std::minstd_rand gen{rd()};
-  std::lognormal_distribution<double> distribution(1.6, 0.45);
+  std::lognormal_distribution<double> distribution(7.6, 0.45);
 
   // Generate and write random numbers
   double number;
   for (int i = 0; i < n; i++) {
-    number = distribution(gen)*400;
+    number = distribution(gen);
     fou << number<< std::endl;
   }
 
