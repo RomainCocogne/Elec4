@@ -27,9 +27,9 @@ CFLAGS_DEBUG       := $(CFLAGS_COMMON) -O -g
 CFLAGS             := $(CFLAGS_COMMON) -O3
 
 
-TARGET             := random_gene
+TARGET             := $1
 SRC_FILES          := \
-  ./random_gene.cpp
+  ./$1.cpp
 
 
 OBJECT_FILES       := $(addprefix  $(OBJDIR)/,$(notdir $(SRC_FILES:.cpp=.r.o)))
