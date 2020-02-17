@@ -1,0 +1,427 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"inc\t#include \"…\""
+			],
+			[
+				"nam",
+				"using\tnamespace"
+			],
+			[
+				"ve",
+				"vector\tstd::vector"
+			],
+			[
+				"vec",
+				"vector\tstd::vector"
+			],
+			[
+				"ma",
+				"main\tmain()"
+			],
+			[
+				"VA",
+				"VALUE_MARGIN"
+			],
+			[
+				"MAX",
+				"STAR_MAX"
+			],
+			[
+				"S",
+				"STEP_SIZE"
+			],
+			[
+				"I",
+				"I_MAX"
+			],
+			[
+				"val",
+				"val_in_bin"
+			],
+			[
+				"his",
+				"histogram"
+			],
+			[
+				"fin",
+				"find"
+			],
+			[
+				"beg",
+				"begin"
+			],
+			[
+				"for",
+				"forward_list"
+			],
+			[
+				"fo",
+				"forward_list"
+			],
+			[
+				"set",
+				"setw"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/C++/C++ Single File.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"run",
+				"Build With: C++ Single File - Run"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"mater",
+				"Activate Materialize Theme"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"clang",
+				"Clang Format: Select Style"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Set Syntax: C++"
+			],
+			[
+				"C++",
+				"Set Syntax: Objective-C++"
+			],
+			[
+				"PACKA",
+				"Package Control: Disable Package"
+			],
+			[
+				"REM",
+				"Package Control: Remove Package"
+			],
+			[
+				"THEME",
+				"UI: Select Theme"
+			],
+			[
+				"MA",
+				"Material Theme: Configuration"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"REMO",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"c++",
+				"Set Syntax: C++11"
+			],
+			[
+				"start",
+				"Build With: C++ - Starting Kit - Run"
+			],
+			[
+				"terminus ",
+				"Terminus Utilities: Select Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"terminus op",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"terminus",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"package control re",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"which cpplint"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/romain/Bureau/Elec4/C++_Embarque",
+		"/home/romain/Bureau/Elec4/C++_Embarque/tp1",
+		"/home/romain/Bureau/Elec4/C++_Embarque/tp1/mean_and_median"
+	],
+	"file_history":
+	[
+		"/home/romain/Bureau/Elec4/C++_Embarque/tp2/test-linear.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/tp2/Spline.hpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/tp1/mean_and_median/histogram.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/tp1/map2.cpp",
+		"/home/romain/Bureau/test.cpp",
+		"/home/romain/.config/sublime-text-3/Packages/C++NamespaceTool/C++NamespaceTool.sublime-settings",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/tp1/random_gene.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/map1.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/histogram.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/map2.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/random_gene.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/tp1/map1.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/tp1/histogram.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/Makefile",
+		"/home/romain/Bureau/Elec4/C++/td10/Dico.hpp",
+		"/home/romain/Bureau/Elec4/C++/td10/4_map.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/histogram",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/histogram.c",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/histogram_c_version",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/mean_and_median",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/mean_and_median.c",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/mean_and_median.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/mean_and_median/mean_and_median_c_version",
+		"/home/romain/Bureau/Elec4/C++/td10/5_matrice.cpp",
+		"/home/romain/Bureau/Elec4/C++/td10/Pile.hpp",
+		"/home/romain/Bureau/Elec4/C++/td10/Matrice.hpp",
+		"/home/romain/Bureau/Elec4/C++/td10/1_vector_iterator.cpp",
+		"/home/romain/Bureau/Elec4/C++/td10/Matrice.cpp",
+		"/home/romain/Bureau/Elec4/C++/td8/main.cpp",
+		"/home/romain/Bureau/Elec4/C++/td10/main.cpp",
+		"/home/romain/Bureau/Elec4/C++/td10/3_pile.cpp",
+		"/home/romain/Bureau/Elec4/C++/td10/2_list.cpp",
+		"/home/romain/Bureau/C++_Embarque/mean_and_median/histogram.cpp",
+		"/home/romain/Bureau/C++_Embarque/mean_and_median/Makefile",
+		"/home/romain/Bureau/C++_Embarque/mean_and_median/map1.cpp",
+		"/home/romain/Bureau/C++_Embarque/cpplint.py",
+		"/home/romain/Bureau/C++_Embarque/mean_and_median/mean_and_median_c_version",
+		"/home/romain/Bureau/C++_Embarque/mean_and_median/mean_and_median.cpp"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vector",
+			"endl",
+			"MatrixXd",
+			"map1",
+			"mean_and_median",
+			"histogram",
+			"n",
+			"map2",
+			"bin",
+			"mean_and_median",
+			"map1",
+			"endl",
+			"<< ",
+			"std::"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 168.0
+	},
+	"output.Terminus 2":
+	{
+		"height": 120.0
+	},
+	"output.exec":
+	{
+		"height": 174.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "c++_embarque.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 199.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

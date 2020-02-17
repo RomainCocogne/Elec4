@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ -fconcepts -Wall -pedantic -o compile/$1 $1.cpp
+g++ -std=c++14 -O3 -Wno-deprecated-declarations -fconcepts -Wall -pedantic -o compile/$1 $1.cpp
 
 name=$1
 shift
