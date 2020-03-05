@@ -1,0 +1,66 @@
+-- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+
+================================================================================================
+                   Clock Frequency Report
+
+	Domain                  Clock Name                            Min Period (Freq)             Required Period (Freq)
+	------                  ----------                            -----------------             ----------------------
+	ClockDomain0            clk                                   4.316 (231.696 MHz)           1000.000 (1.000 MHz)
+-- Device: Altera - Cyclone II : EP2C35F672C : 6
+-- CTE report summary..
+                  CTE Report Summary
+
+End CTE Report Summary ..... CPU Time Used: 0 sec.
+-- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+
+Setup Slack Path Summary
+
+                Data                                 Data  Data
+        Setup   Path   Source  Dest.   Data Start    End   End 
+Index   Slack   Delay  Clock   Clock       Pin       Pin   Edge
+-----  -------  -----  ------  -----  -------------  ----  ----
+  1    995.684  3.042  clk     clk    reg_mm(1)/clk  m(1)  Rise
+  2    995.804  2.922  clk     clk    reg_mm(0)/clk  m(0)  Rise
+
+-- Device: Altera - Cyclone II : EP2C35F672C : 6
+-- CTE report summary..
+                  CTE Report Summary
+
+Analyzing setup constraints. Violations having negative path slack 
+-- Of the 10 requested paths, only 2 were found in the design.
+End CTE Report Summary ..... CPU Time Used: 0 sec.
+-- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+-- Device: Altera - Cyclone II : EP2C35F672C : 6
+-- CTE report timing..
+                  CTE Path Report
+
+
+Critical path #1, (path slack = 995.684):
+
+SOURCE CLOCK: name: clk period: 1000.000000
+     Times are relative to the 1st rising edge
+  DEST CLOCK: name: clk period: 1000.000000
+     Times are relative to the 2nd rising edge
+
+NAME                GATE                   DELAY    ARRIVAL DIR  FANOUT
+reg_mm(1)/clk    cycloneii_lcell_ff                 0.000   up
+reg_mm(1)/regout cycloneii_lcell_ff       0.000     0.000   up
+m_dup_0(1)       (net)                    0.430                   9
+m_obuf(1)/datain cycloneii_io                       0.430   up
+m_obuf(1)/padio  cycloneii_io             2.612     3.042   up
+m(1)             (net)                    0.000                   1
+m(1)             (port)                             3.042   up
+
+		Initial edge separation:   1000.000
+		Source clock delay:      -    0.974
+		Dest clock delay:        +    0.000
+		                        -----------
+		Edge separation:            999.026
+		Setup constraint:        -    0.300
+		                        -----------
+		Data required time:         998.726
+		Data arrival time:       -    3.042   ( 85.86% cell delay, 14.14% net delay )
+		                        -----------
+		Slack:                      995.684
+
+End CTE Analysis ..... CPU Time Used: 0 sec.

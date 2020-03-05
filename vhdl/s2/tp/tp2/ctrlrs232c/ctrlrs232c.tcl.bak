@@ -1,0 +1,22 @@
+quit -sim
+vcom ctrlrs232c.vhd
+vcom fsmmoore.vhd
+vcom fsmsymb.vhd
+vcom test_bench_ctrlrs232c.vhd
+
+vsim -t 1ns work.test(bench_ctrlrs232c)
+add wave -noupdate -divider {entrees de le fsm}
+add wave -noupdate -radix binary test/UUT1/clk
+add wave -noupdate -radix binary test/UUT1/rst
+add wave -noupdate -radix binary test/UUT1/dtr
+add wave -noupdate -radix binary test/UUT1/rts
+add wave -noupdate -divider {etat interne de la fsm}
+add wave -noupdate -radix binary test/UUT1/etat_courrant
+add wave -noupdate -radix binary test/UUT1/etat_suivant
+add wave -noupdate -divider {sorties de la fsm}
+add wave -noupdate -radix binary test/UUT1/mam
+add wave -noupdate -radix binary test/UUT1/mad
+add wave -noupdate -radix binary test/UUT1/dsr
+add wave -noupdate -radix binary test/UUT1/cts
+
+run 300ns

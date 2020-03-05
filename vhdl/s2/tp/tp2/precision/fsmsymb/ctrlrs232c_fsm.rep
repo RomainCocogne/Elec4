@@ -1,0 +1,42 @@
+//Precision RTL Synthesis 64-bit 2017.1.0.15 (Production Release) Fri Sep 15 05:07:37 PDT 2017
+//
+//Copyright (c) Mentor Graphics Corporation, 1996-2017, All Rights Reserved.
+//           Portions copyright 1991-2008 Compuware Corporation
+//                     UNPUBLISHED, LICENSED SOFTWARE.
+//          CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//
+//Running on Windows 10 gse4@PCII-01  10.0.18362 x64
+//
+
+                                =======================                         
+                                Precision 64-bit 2017.1.0.15                         
+                                =======================                         
+
+
+
+                                FSM EXTRACTION ANALYSIS                         
+                                =======================                         
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module : work.ctrlrs232c(symb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Number of FSMs Extracted : 1
+
+1.
+--------------------------------------------------
+Number of States                : 4
+Primary State Variable          : etat_courrant[3:0]
+Other State Variable(s)         : 1) etat_suivant[3:0]
+Async set/reset state(s)        : 0001 
+Re-encoding Scheme              : ONEHOT 
+FSM: Info, state encoding table:
+FSM:	Index	                         State Name	                            Literal	                      Encoding
+FSM:	    0	                             CONFIG	                               0001	                          0001
+FSM:	    1	                                 FD	                               1000	                          0010
+FSM:	    2	                              RECEP	                               0010	                          0100
+FSM:	    3	                               EMIS	                               0100	                          1000
+
+
+

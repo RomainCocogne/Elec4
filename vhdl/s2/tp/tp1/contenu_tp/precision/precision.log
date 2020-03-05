@@ -1,0 +1,1394 @@
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/shared/examples/precision.log
+//  Precision RTL Synthesis 64-bit 2017.1.0.15 (Production Release) Fri Sep 15 05:07:37 PDT 2017
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2017, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 gse4@PCII-01  10.0.18362 x64
+//  
+//  Start time Thu Feb 20 15:00:55 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/shared/examples/precision.log
+# COMMAND: new_project -name display -folder C:/Users/gse4/Desktop/tp1/precision -createimpl_name display_impl_1
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp1/precision
+# Info: [9572]: Moving session transcript to file C:/Users/gse4/Desktop/tp1/precision/precision.log
+# Info: [9558]: Created project C:/Users/gse4/Desktop/tp1/precision/display.psp in folder C:/Users/gse4/Desktop/tp1/precision.
+# Info: [9531]: Created directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [9557]: Created implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+# Info: [9578]: The Results Directory has been set to: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/
+# Info: [9569]: Logging project transcript to file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+new_project -name display -folder C:/Users/gse4/Desktop/tp1/precision -createimpl_name display_impl_1
+# COMMAND: setup_design -manufacturer Altera -family "Cyclone II" -part EP2C35F672C -speed 6
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [579]: The global max fanout is currently set to 1000 for Altera - Cyclone II.
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+setup_design -manufacturer Altera -family "Cyclone II" -part EP2C35F672C -speed 6
+# COMMAND: setup_design -max_fanout=1000
+# Info: [579]: The global max fanout is currently set to 1000 for Altera - Cyclone II.
+setup_design -max_fanout=1000
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: setup_design -edif=true -vhdl=true
+setup_design -edif=true -vhdl=true
+# COMMAND: setup_design -vhdl=true
+setup_design -vhdl=true
+# COMMAND: setup_design -vhdl=true
+setup_design -vhdl=true
+# COMMAND: setup_place_and_route -flow "Quartus II Modular" -command "Integrated Place and Route" -install_dir C:/altera/13.0sp1/quartus -ba_format VHDL
+setup_place_and_route -flow "Quartus II Modular" -command "Integrated Place and Route" -install_dir C:/altera/13.0sp1/quartus -ba_format VHDL
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: add_input_file {../display/display.vhd}
+add_input_file {../display/display.vhd}
+# COMMAND: compile
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/techlibs/cycloneii.syn.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Warning: [45729]: "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd", line 8: Input port rst has never been used.
+# Warning: [45731]: "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd", line 9: Output port m has never been assigned a value.
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 42.
+# Info: [44835]: Total CPU time for compilation: 0.5 secs.
+# Info: [44513]: Overall running time for compilation: 3.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Warning: [45731]: "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd", line 9: Output port m has never been assigned a value.
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 44.
+# Info: [44835]: Total CPU time for compilation: 0.2 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 45.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: trace_backward {{port aff3(*)}} -input -add -design rtl
+trace_backward {{port aff3(*)}} -input -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: trace_forward {{port clk}} -register -add -design rtl
+trace_forward {{port clk}} -register -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: trace_forward {{port mode(*)}} -register -add -design rtl
+trace_forward {{port mode(*)}} -register -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: view_find -design rtl -set_name Precision_RTL_Find -hierarchy -all -inst -pin -port -net process
+# Info: [4600]: No matches
+view_find -design rtl -set_name Precision_RTL_Find -hierarchy -all -inst -pin -port -net process
+# COMMAND: create_clock -design rtl -period 1000 -waveform {0 500} -name clk -domain ClockDomain0 clk
+create_clock -design rtl -period 1000 -waveform {0 500} -name clk -domain ClockDomain0 clk
+# COMMAND: set_attribute -design rtl -name PIN_NUMBER -value G26 -port {clk}
+set_attribute -design rtl -name PIN_NUMBER -value G26 -port {clk}
+# COMMAND: update_constraint_file
+update_constraint_file
+# COMMAND: set_output_delay 0.3 -add_delay -design rtl -clock clk {m(1:0)}
+set_output_delay 0.3 -add_delay -design rtl -clock clk {m(1:0)}
+# COMMAND: update_constraint_file
+update_constraint_file
+# COMMAND: set_false_path -design rtl -from {rst dtr mode(1:0)} -to {m(1:0) aff0(6:0) aff1(6:0) aff2(6:0) aff3(6:0) aff4(6:0) aff5(6:0)}
+set_false_path -design rtl -from {rst dtr mode(1:0)} -to {m(1:0) aff0(6:0) aff1(6:0) aff2(6:0) aff3(6:0) aff4(6:0) aff5(6:0)}
+# COMMAND: update_constraint_file
+update_constraint_file
+# COMMAND: trace_objects {{inst reg_mm(0)}} -design rtl
+trace_objects {{inst reg_mm(0)}} -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15002]: Optimizing design view:.work.display.beh_display
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.edf.
+# Info: Info, Writing xrf file 'C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf'
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vhd.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project gen_vcf display 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 1.6 s secs.
+synthesize
+# COMMAND: report_area C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_area.rep -cell_usage
+report_area C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_area.rep -cell_usage
+# COMMAND: report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -clock_frequency
+report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -clock_frequency
+# COMMAND: report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -summary -num_paths 10 -append
+report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -summary -num_paths 10 -append
+# COMMAND: report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -num_paths 1 -show_nets -append
+report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -num_paths 1 -show_nets -append
+# COMMAND: report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -clock_frequency
+report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -clock_frequency
+# COMMAND: report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -summary -num_paths 10
+report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -summary -num_paths 10
+# COMMAND: report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -num_paths 1 -show_nets -show_schematic
+report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -num_paths 1 -show_nets -show_schematic
+# COMMAND: report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -clock_frequency
+report_timing C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -clock_frequency
+# COMMAND: report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -summary -num_paths 10
+report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -summary -num_paths 10
+# COMMAND: report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -num_paths 1 -show_nets -show_schematic
+report_timing -append C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_timing.rep -num_paths 1 -show_nets -show_schematic
+# COMMAND: trace_backward {{net aff3(2)}} -input -add -design gatelevel
+trace_backward {{net aff3(2)}} -input -add -design gatelevel
+# COMMAND: view_trace_schematic -design gatelevel
+view_trace_schematic -design gatelevel
+# COMMAND: reset_trace -design gatelevel
+reset_trace -design gatelevel
+# COMMAND: remove_input_file {C:/Users/gse4/Desktop/tp1/display/display.vhd}
+remove_input_file {C:/Users/gse4/Desktop/tp1/display/display.vhd}
+# COMMAND: add_input_file {E:/Elec4/vhdl/tp/tp1/display/display.vhd}
+add_input_file {E:/Elec4/vhdl/tp/tp1/display/display.vhd}
+# COMMAND: remove_input_file {E:/Elec4/vhdl/tp/tp1/display/display.vhd}
+remove_input_file {E:/Elec4/vhdl/tp/tp1/display/display.vhd}
+# COMMAND: add_input_file {../display/display.vhd}
+add_input_file {../display/display.vhd}
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 50.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Warning: [1037]: Object not found: "m(1:0)".
+# Warning: [1037]: Object not found: "aff0(6:0)".
+# Warning: [1037]: Object not found: "aff1(6:0)".
+# Warning: [1037]: Object not found: "aff2(6:0)".
+# Warning: [1037]: Object not found: "aff3(6:0)".
+# Warning: [1037]: Object not found: "aff4(6:0)".
+# Warning: [1037]: Object not found: "aff5(6:0)".
+# Warning: [1002]: Invalid setting for -to option of set_false_path constraint.
+# Warning: [1015]: set_false_path constraint failed.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 50.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 58.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15002]: Optimizing design view:.work.display.beh_display
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.edf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project gen_vcf display 1
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vhd.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project gen_vcf display 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.5 s secs.
+synthesize
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 63.
+# Info: [44835]: Total CPU time for compilation: 0.2 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15002]: Optimizing design view:.work.display.beh_display
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.edf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project gen_vcf display 1
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vhd.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project gen_vcf display 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.5 s secs.
+synthesize
+# COMMAND: place_and_route cl
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project cl display 1
+# Info: -- starting QUARTUS II ...
+# Info: Running C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: -chdir C:/Users/gse4/Desktop/tp1/precision/display_impl_1 C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: PNR COMMAND: C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Shell
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+# Info: [715]:     Info: Your use of Altera Corporation's design tools, logic functions 
+# Info: [715]:     Info: and other software and tools, and its AMPP partner logic 
+# Info: [715]:     Info: functions, and any output files from any of the foregoing 
+# Info: [715]:     Info: (including device programming or simulation files), and any 
+# Info: [715]:     Info: associated documentation or information are expressly subject 
+# Info: [715]:     Info: to the terms and conditions of the Altera Program License 
+# Info: [715]:     Info: Subscription Agreement, Altera MegaCore Function License 
+# Info: [715]:     Info: Agreement, or other applicable license agreement, including, 
+# Info: [715]:     Info: without limitation, that your use is for the sole purpose of 
+# Info: [715]:     Info: programming logic devices manufactured by Altera and sold by 
+# Info: [715]:     Info: Altera or its authorized distributors.  Please refer to the 
+# Info: [715]:     Info: applicable agreement for further details.
+# Info: [715]:     Info: Processing started: Thu Feb 20 16:55:55 2020
+# Info: [715]: Info: Command: quartus_sh -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Analysis & Synthesis
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 16:56:09 2020
+# Info: [715]: Info: Command: quartus_map --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (12021): Found 1 design units, including 1 entities, in source file display.vqm
+# Info: [715]:     Info (12023): Found entity 1: display
+# Info: [715]: Info (12127): Elaborating entity "display" for the top level hierarchy
+# Info: [715]: Info (16010): Generating hard_block partition "auto_generated_inst"
+# Info: [715]:     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+# Info: [715]: Info (21057): Implemented 53 device resources after synthesis - the final resource count might be different
+# Info: [715]:     Info (21058): Implemented 5 input pins
+# Info: [715]:     Info (21059): Implemented 44 output pins
+# Info: [715]:     Info (21061): Implemented 4 logic cells
+# Info: [715]: Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4612 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 16:56:17 2020
+# Info: [715]:     Info: Elapsed time: 00:00:08
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Fitter
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 16:56:19 2020
+# Info: [715]: Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info: qfit2_default_script.tcl version: #1
+# Info: [715]: Info: Project  = display
+# Info: [715]: Info: Revision = display
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (119006): Selected device EP2C35F672C6 for design "display"
+# Info: [715]: Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+# Info: [715]: Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+# Info: [715]:     Info (176445): Device EP2C50F672C6 is compatible
+# Info: [715]:     Info (176445): Device EP2C70F672C6 is compatible
+# Info: [715]: Info (169124): Fitter converted 3 user pins into dedicated programming pins
+# Info: [715]:     Info (169125): Pin ~ASDO~ is reserved at location E3
+# Info: [715]:     Info (169125): Pin ~nCSO~ is reserved at location D3
+# Info: [715]:     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
+# Info: [715]: Info (332104): Reading SDC File: 'display_pnr_constraints.sdc'
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): dtr_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): rst_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_5_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_6_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff2_obuf_2_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff3_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff5_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+# Info: [715]: Info (332111): Found 1 clocks
+# Info: [715]:     Info (332111):   Period   Clock Name
+# Info: [715]:     Info (332111): ======== ============
+# Info: [715]:     Info (332111): 1000.000          clk
+# Info: [715]: Info (176353): Automatically promoted node rst (placed in PIN W26 (LVDS139p, CDPCLK4/DQS3R/CQ3R#))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G7
+# Info: [715]: Info (176233): Starting register packing
+# Info: [715]: Info (176235): Finished register packing
+# Info: [715]:     Extra Info (176219): No registers were packed into other blocks
+# Info: [715]: Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+# Info: [715]: Info (170189): Fitter placement preparation operations beginning
+# Info: [715]: Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170191): Fitter placement operations beginning
+# Info: [715]: Info (170137): Fitter placement was successful
+# Info: [715]: Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170193): Fitter routing operations beginning
+# Info: [715]: Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+# Info: [715]:     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X55_Y12 to location X65_Y23
+# Info: [715]: Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+# Info: [715]:     Info (170201): Optimizations that may affect the design's routability were skipped
+# Info: [715]:     Info (170200): Optimizations that may affect the design's timing were skipped
+# Info: [715]: Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Warning (306006): Found 44 output pins without output pin load capacitance assignment
+# Info: [715]:     Info (306007): Pin "m[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "m[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+# Info: [715]: Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
+# Info: [715]: Info (144001): Generated suppressed messages file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.fit.smsg
+# Info: [715]: Info: Quartus II 64-Bit Fitter was successful. 0 errors, 14 warnings
+# Info: [715]:     Info: Peak virtual memory: 5344 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 16:56:34 2020
+# Info: [715]:     Info: Elapsed time: 00:00:15
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:06
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 16:56:35 2020
+# Info: [715]: Info: Command: quartus_sta display -c display --do_report_timing
+# Info: [715]: Info: qsta_default_script.tcl version: #1
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (332104): Reading SDC File: 'display_pnr_constraints.sdc'
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): dtr_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): rst_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_5_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_6_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff2_obuf_2_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff3_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff5_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+# Info: [715]: Info: Analyzing Slow Model
+# Info: [715]: Info (332146): Worst-case setup slack is 993.096
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   993.096         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 6.835
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     6.835         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 993.096
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 993.096 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[1]
+# Info: [715]:     Info (332115): To Node      : m[1]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.701      2.701  R        clock network delay
+# Info: [715]:     Info (332115):      2.951      0.250     uTco  m_dup_0[1]
+# Info: [715]:     Info (332115):      2.951      0.000 RR  CELL  reg_mm_1_|regout
+# Info: [715]:     Info (332115):      3.972      1.021 RR    IC  m_obuf_1_|datain
+# Info: [715]:     Info (332115):      6.604      2.632 RR  CELL  m[1]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    999.700     -0.300  R  oExt  m[1]
+# Info: [715]:     Info (332115): Data Arrival Time  :     6.604
+# Info: [715]:     Info (332115): Data Required Time :   999.700
+# Info: [715]:     Info (332115): Slack              :   993.096 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 6.835
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 6.835 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[0]
+# Info: [715]:     Info (332115): To Node      : m[0]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.701      2.701  R        clock network delay
+# Info: [715]:     Info (332115):      2.951      0.250     uTco  m_dup_0[0]
+# Info: [715]:     Info (332115):      2.951      0.000 RR  CELL  reg_mm_0_|regout
+# Info: [715]:     Info (332115):      3.913      0.962 RR    IC  m_obuf_0_|datain
+# Info: [715]:     Info (332115):      6.535      2.622 RR  CELL  m[0]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      0.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):     -0.300     -0.300  R  oExt  m[0]
+# Info: [715]:     Info (332115): Data Arrival Time  :     6.535
+# Info: [715]:     Info (332115): Data Required Time :    -0.300
+# Info: [715]:     Info (332115): Slack              :     6.835 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : m_dup_0[0]
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.862      0.862 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      2.164      1.302 RR    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):      2.701      0.537 RR  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.862      0.862 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    502.164      1.302 FF    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):    502.701      0.537 FF  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info: Analyzing Fast Model
+# Info: [715]: Info (332146): Worst-case setup slack is 996.192
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   996.192         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 3.759
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     3.759         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 996.192
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 996.192 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[1]
+# Info: [715]:     Info (332115): To Node      : m[1]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.461      1.461  R        clock network delay
+# Info: [715]:     Info (332115):      1.602      0.141     uTco  m_dup_0[1]
+# Info: [715]:     Info (332115):      1.602      0.000 RR  CELL  reg_mm_1_|regout
+# Info: [715]:     Info (332115):      2.100      0.498 RR    IC  m_obuf_1_|datain
+# Info: [715]:     Info (332115):      3.508      1.408 RR  CELL  m[1]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    999.700     -0.300  R  oExt  m[1]
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.508
+# Info: [715]:     Info (332115): Data Required Time :   999.700
+# Info: [715]:     Info (332115): Slack              :   996.192 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 3.759
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 3.759 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[0]
+# Info: [715]:     Info (332115): To Node      : m[0]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.461      1.461  R        clock network delay
+# Info: [715]:     Info (332115):      1.602      0.141     uTco  m_dup_0[0]
+# Info: [715]:     Info (332115):      1.602      0.000 RR  CELL  reg_mm_0_|regout
+# Info: [715]:     Info (332115):      2.061      0.459 RR    IC  m_obuf_0_|datain
+# Info: [715]:     Info (332115):      3.459      1.398 RR  CELL  m[0]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      0.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):     -0.300     -0.300  R  oExt  m[0]
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.459
+# Info: [715]:     Info (332115): Data Required Time :    -0.300
+# Info: [715]:     Info (332115): Slack              :     3.759 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : m_dup_0[0]
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.484      0.484 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      1.139      0.655 RR    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):      1.461      0.322 RR  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.484      0.484 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    501.139      0.655 FF    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):    501.461      0.322 FF  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info (332102): Design is not fully constrained for setup requirements
+# Info: [715]: Info (332102): Design is not fully constrained for hold requirements
+# Info: [715]: Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 12 warnings
+# Info: [715]:     Info: Peak virtual memory: 4582 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 16:56:39 2020
+# Info: [715]:     Info: Elapsed time: 00:00:04
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Assembler
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 16:56:41 2020
+# Info: [715]: Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info (115031): Writing out detailed assembly data for power analysis
+# Info: [715]: Info (115030): Assembler is generating device programming files
+# Info: [715]: Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4578 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 16:56:46 2020
+# Info: [715]:     Info: Elapsed time: 00:00:05
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:02
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit EDA Netlist Writer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 16:56:47 2020
+# Info: [715]: Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info (204026): Generated files "display.vho", "display_fast.vho", "display_vhd.sdo" and "display_vhd_fast.sdo" in directory "C:/Users/gse4/Desktop/tp1/precision/display_impl_1/simulation/modelsim/" for EDA simulation tool
+# Info: [715]: Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4537 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 16:56:50 2020
+# Info: [715]:     Info: Elapsed time: 00:00:03
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info (23030): Evaluation of Tcl script C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl was successful
+# Info: [715]: Info: Quartus II 64-Bit Shell was successful. 0 errors, 30 warnings
+# Info: [715]:     Info: Peak virtual memory: 4335 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 16:56:53 2020
+# Info: [715]:     Info: Elapsed time: 00:00:58
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+place_and_route cl
+# COMMAND: dofile ./synthese.tcl
+# Error: [586]: couldn't open "./synthese.tcl": no such file or directory
+dofile ./synthese.tcl
+# COMMAND: dofile synthese.tcl
+# Error: [586]: couldn't open "synthese.tcl": no such file or directory
+dofile synthese.tcl
+# COMMAND: dofile synthese.tcl
+# Error: [586]: couldn't open "synthese.tcl": no such file or directory
+dofile synthese.tcl
+# COMMAND: dofile C:/Users/gse4/Desktop/tp1/precision/synthese.tcl
+# Error: [586]: couldn't open "C:/Users/gse4/Desktop/tp1/precision/synthese.tcl": no such file or directory
+dofile C:/Users/gse4/Desktop/tp1/precision/synthese.tcl
+# COMMAND: add_input_file {synthese.tcl}
+add_input_file {synthese.tcl}
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp1/precision/synthese.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp1/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Error: [3005]: Unable to find file: C:/Users/gse4/Desktop/tp1/precision/../display/displaybeh.vhd.
+# Error: [9611]: Cannot add input file.
+dofile C:/Users/gse4/Desktop/tp1/precision/synthese.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp1/precision/synthese.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp1/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp1/display/display.vhd already exists in the list. Command options ignored.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 63.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+dofile C:/Users/gse4/Desktop/tp1/precision/synthese.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: add_input_file {simupostroutage.tcl}
+add_input_file {simupostroutage.tcl}
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl
+dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation display_impl_1 in project C:/Users/gse4/Desktop/tp1/precision/display.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl
+dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd" ...
+# Info: [663]: Top module of the design is set to: display.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.display(beh_display): Pre-processing...
+# Info: [44523]: Root Module work.display(beh_display): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 63.
+# Info: [44835]: Total CPU time for compilation: 0.4 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp1/precision/display_impl_1.
+# Info: [15002]: Optimizing design view:.work.display.beh_display
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.edf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Warning: Moving C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.qsf to C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display_save.qsf
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project gen_vcf display 1
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vhd.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project gen_vcf display 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.6 s secs.
+synthesize
+# COMMAND: place_and_route cl
+# Info: -- Writing file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: exq_pr_compile_project cl display 1
+# Info: -- starting QUARTUS II ...
+# Info: Running C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: -chdir C:/Users/gse4/Desktop/tp1/precision/display_impl_1 C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: PNR COMMAND: C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Shell
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+# Info: [715]:     Info: Your use of Altera Corporation's design tools, logic functions 
+# Info: [715]:     Info: and other software and tools, and its AMPP partner logic 
+# Info: [715]:     Info: functions, and any output files from any of the foregoing 
+# Info: [715]:     Info: (including device programming or simulation files), and any 
+# Info: [715]:     Info: associated documentation or information are expressly subject 
+# Info: [715]:     Info: to the terms and conditions of the Altera Program License 
+# Info: [715]:     Info: Subscription Agreement, Altera MegaCore Function License 
+# Info: [715]:     Info: Agreement, or other applicable license agreement, including, 
+# Info: [715]:     Info: without limitation, that your use is for the sole purpose of 
+# Info: [715]:     Info: programming logic devices manufactured by Altera and sold by 
+# Info: [715]:     Info: Altera or its authorized distributors.  Please refer to the 
+# Info: [715]:     Info: applicable agreement for further details.
+# Info: [715]:     Info: Processing started: Thu Feb 20 17:34:46 2020
+# Info: [715]: Info: Command: quartus_sh -t C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Analysis & Synthesis
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 17:34:49 2020
+# Info: [715]: Info: Command: quartus_map --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (12021): Found 1 design units, including 1 entities, in source file display.vqm
+# Info: [715]:     Info (12023): Found entity 1: display
+# Info: [715]: Info (12127): Elaborating entity "display" for the top level hierarchy
+# Info: [715]: Info (16010): Generating hard_block partition "auto_generated_inst"
+# Info: [715]:     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+# Info: [715]: Info (21057): Implemented 53 device resources after synthesis - the final resource count might be different
+# Info: [715]:     Info (21058): Implemented 5 input pins
+# Info: [715]:     Info (21059): Implemented 44 output pins
+# Info: [715]:     Info (21061): Implemented 4 logic cells
+# Info: [715]: Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4613 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 17:34:52 2020
+# Info: [715]:     Info: Elapsed time: 00:00:03
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Fitter
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 17:34:53 2020
+# Info: [715]: Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info: qfit2_default_script.tcl version: #1
+# Info: [715]: Info: Project  = display
+# Info: [715]: Info: Revision = display
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (119006): Selected device EP2C35F672C6 for design "display"
+# Info: [715]: Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+# Info: [715]: Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+# Info: [715]:     Info (176445): Device EP2C50F672C6 is compatible
+# Info: [715]:     Info (176445): Device EP2C70F672C6 is compatible
+# Info: [715]: Info (169124): Fitter converted 3 user pins into dedicated programming pins
+# Info: [715]:     Info (169125): Pin ~ASDO~ is reserved at location E3
+# Info: [715]:     Info (169125): Pin ~nCSO~ is reserved at location D3
+# Info: [715]:     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
+# Info: [715]: Info (332104): Reading SDC File: 'display_pnr_constraints.sdc'
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): dtr_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): rst_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_5_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_6_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff2_obuf_2_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff3_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff5_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(20): dtr_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(20): mode_ibuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(20): mode_ibuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+# Info: [715]: Info (332111): Found 1 clocks
+# Info: [715]:     Info (332111):   Period   Clock Name
+# Info: [715]:     Info (332111): ======== ============
+# Info: [715]:     Info (332111): 1000.000          clk
+# Info: [715]: Info (176353): Automatically promoted node rst (placed in PIN W26 (LVDS139p, CDPCLK4/DQS3R/CQ3R#))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G7
+# Info: [715]: Info (176233): Starting register packing
+# Info: [715]: Info (176235): Finished register packing
+# Info: [715]:     Extra Info (176219): No registers were packed into other blocks
+# Info: [715]: Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170189): Fitter placement preparation operations beginning
+# Info: [715]: Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170191): Fitter placement operations beginning
+# Info: [715]: Info (170137): Fitter placement was successful
+# Info: [715]: Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170193): Fitter routing operations beginning
+# Info: [715]: Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+# Info: [715]:     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X55_Y12 to location X65_Y23
+# Info: [715]: Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+# Info: [715]:     Info (170201): Optimizations that may affect the design's routability were skipped
+# Info: [715]:     Info (170200): Optimizations that may affect the design's timing were skipped
+# Info: [715]: Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Warning (306006): Found 44 output pins without output pin load capacitance assignment
+# Info: [715]:     Info (306007): Pin "m[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "m[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff0[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff1[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff2[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff3[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff4[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "aff5[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+# Info: [715]: Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
+# Info: [715]: Info (144001): Generated suppressed messages file C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.fit.smsg
+# Info: [715]: Info: Quartus II 64-Bit Fitter was successful. 0 errors, 17 warnings
+# Info: [715]:     Info: Peak virtual memory: 5352 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 17:35:00 2020
+# Info: [715]:     Info: Elapsed time: 00:00:07
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:06
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 17:35:01 2020
+# Info: [715]: Info: Command: quartus_sta display -c display --do_report_timing
+# Info: [715]: Info: qsta_default_script.tcl version: #1
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (332104): Reading SDC File: 'display_pnr_constraints.sdc'
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): dtr_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): mode_ibuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): rst_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_5_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff1_obuf_6_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff2_obuf_2_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff3_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): aff5_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(19): m_obuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(20): dtr_ibuf could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(20): mode_ibuf_0_ could not be matched with a clock or keeper
+# Info: [715]: Warning (332174): Ignored filter at display_pnr_constraints.sdc(20): mode_ibuf_1_ could not be matched with a clock or keeper
+# Info: [715]: Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+# Info: [715]: Info: Analyzing Slow Model
+# Info: [715]: Info (332146): Worst-case setup slack is 993.036
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   993.036         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 6.895
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     6.895         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 993.036
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 993.036 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[1]
+# Info: [715]:     Info (332115): To Node      : m[1]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.701      2.701  R        clock network delay
+# Info: [715]:     Info (332115):      2.951      0.250     uTco  m_dup_0[1]
+# Info: [715]:     Info (332115):      2.951      0.000 RR  CELL  reg_mm_1_|regout
+# Info: [715]:     Info (332115):      3.972      1.021 RR    IC  m_obuf_1_|datain
+# Info: [715]:     Info (332115):      6.604      2.632 RR  CELL  m[1]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    999.640     -0.360  R  oExt  m[1]
+# Info: [715]:     Info (332115): Data Arrival Time  :     6.604
+# Info: [715]:     Info (332115): Data Required Time :   999.640
+# Info: [715]:     Info (332115): Slack              :   993.036 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 6.895
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 6.895 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[0]
+# Info: [715]:     Info (332115): To Node      : m[0]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.701      2.701  R        clock network delay
+# Info: [715]:     Info (332115):      2.951      0.250     uTco  m_dup_0[0]
+# Info: [715]:     Info (332115):      2.951      0.000 RR  CELL  reg_mm_0_|regout
+# Info: [715]:     Info (332115):      3.913      0.962 RR    IC  m_obuf_0_|datain
+# Info: [715]:     Info (332115):      6.535      2.622 RR  CELL  m[0]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      0.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):     -0.360     -0.360  R  oExt  m[0]
+# Info: [715]:     Info (332115): Data Arrival Time  :     6.535
+# Info: [715]:     Info (332115): Data Required Time :    -0.360
+# Info: [715]:     Info (332115): Slack              :     6.895 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : m_dup_0[0]
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.862      0.862 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      2.164      1.302 RR    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):      2.701      0.537 RR  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.862      0.862 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    502.164      1.302 FF    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):    502.701      0.537 FF  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info: Analyzing Fast Model
+# Info: [715]: Info (332146): Worst-case setup slack is 996.132
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   996.132         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 3.819
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     3.819         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 996.132
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 996.132 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[1]
+# Info: [715]:     Info (332115): To Node      : m[1]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.461      1.461  R        clock network delay
+# Info: [715]:     Info (332115):      1.602      0.141     uTco  m_dup_0[1]
+# Info: [715]:     Info (332115):      1.602      0.000 RR  CELL  reg_mm_1_|regout
+# Info: [715]:     Info (332115):      2.100      0.498 RR    IC  m_obuf_1_|datain
+# Info: [715]:     Info (332115):      3.508      1.408 RR  CELL  m[1]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    999.640     -0.360  R  oExt  m[1]
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.508
+# Info: [715]:     Info (332115): Data Required Time :   999.640
+# Info: [715]:     Info (332115): Slack              :   996.132 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 3.819
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 3.819 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : m_dup_0[0]
+# Info: [715]:     Info (332115): To Node      : m[0]
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.461      1.461  R        clock network delay
+# Info: [715]:     Info (332115):      1.602      0.141     uTco  m_dup_0[0]
+# Info: [715]:     Info (332115):      1.602      0.000 RR  CELL  reg_mm_0_|regout
+# Info: [715]:     Info (332115):      2.061      0.459 RR    IC  m_obuf_0_|datain
+# Info: [715]:     Info (332115):      3.459      1.398 RR  CELL  m[0]
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      0.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):     -0.360     -0.360  R  oExt  m[0]
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.459
+# Info: [715]:     Info (332115): Data Required Time :    -0.360
+# Info: [715]:     Info (332115): Slack              :     3.819 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : m_dup_0[0]
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.484      0.484 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      1.139      0.655 RR    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):      1.461      0.322 RR  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.484      0.484 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    501.139      0.655 FF    IC  reg_mm_0_|clk
+# Info: [715]:     Info (332113):    501.461      0.322 FF  CELL  m_dup_0[0]
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info (332102): Design is not fully constrained for setup requirements
+# Info: [715]: Info (332102): Design is not fully constrained for hold requirements
+# Info: [715]: Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 15 warnings
+# Info: [715]:     Info: Peak virtual memory: 4586 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 17:35:12 2020
+# Info: [715]:     Info: Elapsed time: 00:00:11
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Assembler
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 17:35:13 2020
+# Info: [715]: Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info (115031): Writing out detailed assembly data for power analysis
+# Info: [715]: Info (115030): Assembler is generating device programming files
+# Info: [715]: Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4578 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 17:35:26 2020
+# Info: [715]:     Info: Elapsed time: 00:00:13
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:02
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit EDA Netlist Writer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Thu Feb 20 17:35:27 2020
+# Info: [715]: Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off display -c display
+# Info: [715]: Info (204026): Generated files "display.vho", "display_fast.vho", "display_vhd.sdo" and "display_vhd_fast.sdo" in directory "C:/Users/gse4/Desktop/tp1/precision/display_impl_1/simulation/modelsim/" for EDA simulation tool
+# Info: [715]: Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4537 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 17:35:29 2020
+# Info: [715]:     Info: Elapsed time: 00:00:02
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info (23030): Evaluation of Tcl script C:/Users/gse4/Desktop/tp1/precision/display_impl_1/display.tcl was successful
+# Info: [715]: Info: Quartus II 64-Bit Shell was successful. 0 errors, 36 warnings
+# Info: [715]:     Info: Peak virtual memory: 4328 megabytes
+# Info: [715]:     Info: Processing ended: Thu Feb 20 17:35:32 2020
+# Info: [715]:     Info: Elapsed time: 00:00:46
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:03
+place_and_route cl
+# COMMAND: dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl
+dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl
+# COMMAND: dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl
+dofile C:/Users/gse4/Desktop/tp1/precision/simupostroutage.tcl

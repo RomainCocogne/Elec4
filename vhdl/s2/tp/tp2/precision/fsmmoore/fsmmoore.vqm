@@ -1,0 +1,118 @@
+//
+// Verilog description for cell ctrlrs232c, 
+// 03/04/20 16:15:53
+//
+// Precision RTL Synthesis, 64-bit 2017.1.0.15//
+
+
+module ctrlrs232c ( dsr, cts, mam, mad, rst, clk, m, dtr, rts ) ;
+
+    output dsr ;
+    output cts ;
+    output mam ;
+    output mad ;
+    input rst ;
+    input clk ;
+    input m ;
+    input dtr ;
+    input rts ;
+
+    wire mam_dup_0, mad_dup_0, rst_int, clk_int, m_int, dtr_int, rts_int, 
+         cts_dup_0, not_rst, nx48476z1, nx53166z1, nx52169z1, nx52169z2;
+    wire [161:0] xmplr_dummy ;
+
+
+
+
+    assign cts_dup_0 = ~mad_dup_0 ;
+    assign not_rst = ~rst_int ;
+    cycloneii_io rts_ibuf (.combout (rts_int), .padio (rts)) ;
+                 defparam rts_ibuf.operation_mode = "input";
+                 defparam rts_ibuf.output_register_mode = "none";
+                 defparam rts_ibuf.tie_off_output_clock_enable = "false";
+                 defparam rts_ibuf.oe_register_mode = "none";
+                 defparam rts_ibuf.tie_off_oe_clock_enable = "false";
+                 defparam rts_ibuf.input_register_mode = "none";
+    cycloneii_io rst_ibuf (.combout (rst_int), .padio (rst)) ;
+                 defparam rst_ibuf.operation_mode = "input";
+                 defparam rst_ibuf.output_register_mode = "none";
+                 defparam rst_ibuf.tie_off_output_clock_enable = "false";
+                 defparam rst_ibuf.oe_register_mode = "none";
+                 defparam rst_ibuf.tie_off_oe_clock_enable = "false";
+                 defparam rst_ibuf.input_register_mode = "none";
+    cycloneii_lcell_ff reg_etat_courrant_1_ (.regout (mam_dup_0), .datain (
+                       nx53166z1), .clk (clk_int), .aclr (not_rst)) ;
+    cycloneii_lcell_ff reg_etat_courrant_0_ (.regout (mad_dup_0), .datain (
+                       nx52169z1), .clk (clk_int), .aclr (not_rst)) ;
+    cycloneii_io mam_obuf (.padio (mam), .datain (nx53166z1), .outclk (clk_int)
+                 , .areset (not_rst)) ;
+                 defparam mam_obuf.operation_mode = "output";
+                 defparam mam_obuf.output_register_mode = "register";
+                 defparam mam_obuf.output_async_reset = "clear";
+                 defparam mam_obuf.output_power_up = "low";
+                 defparam mam_obuf.tie_off_output_clock_enable = "false";
+                 defparam mam_obuf.oe_register_mode = "none";
+                 defparam mam_obuf.tie_off_oe_clock_enable = "false";
+                 defparam mam_obuf.input_register_mode = "none";
+    cycloneii_io mad_obuf (.padio (mad), .datain (nx52169z1), .outclk (clk_int)
+                 , .areset (not_rst)) ;
+                 defparam mad_obuf.operation_mode = "output";
+                 defparam mad_obuf.output_register_mode = "register";
+                 defparam mad_obuf.output_async_reset = "clear";
+                 defparam mad_obuf.output_power_up = "low";
+                 defparam mad_obuf.tie_off_output_clock_enable = "false";
+                 defparam mad_obuf.oe_register_mode = "none";
+                 defparam mad_obuf.tie_off_oe_clock_enable = "false";
+                 defparam mad_obuf.input_register_mode = "none";
+    cycloneii_io m_ibuf (.combout (m_int), .padio (m)) ;
+                 defparam m_ibuf.operation_mode = "input";
+                 defparam m_ibuf.output_register_mode = "none";
+                 defparam m_ibuf.tie_off_output_clock_enable = "false";
+                 defparam m_ibuf.oe_register_mode = "none";
+                 defparam m_ibuf.tie_off_oe_clock_enable = "false";
+                 defparam m_ibuf.input_register_mode = "none";
+    cycloneii_io dtr_ibuf (.combout (dtr_int), .padio (dtr)) ;
+                 defparam dtr_ibuf.operation_mode = "input";
+                 defparam dtr_ibuf.output_register_mode = "none";
+                 defparam dtr_ibuf.tie_off_output_clock_enable = "false";
+                 defparam dtr_ibuf.oe_register_mode = "none";
+                 defparam dtr_ibuf.tie_off_oe_clock_enable = "false";
+                 defparam dtr_ibuf.input_register_mode = "none";
+    cycloneii_io dsr_obuf (.padio (dsr), .datain (nx48476z1)) ;
+                 defparam dsr_obuf.operation_mode = "output";
+                 defparam dsr_obuf.output_register_mode = "none";
+                 defparam dsr_obuf.tie_off_output_clock_enable = "false";
+                 defparam dsr_obuf.oe_register_mode = "none";
+                 defparam dsr_obuf.tie_off_oe_clock_enable = "false";
+                 defparam dsr_obuf.input_register_mode = "none";
+    cycloneii_io cts_obuf (.padio (cts), .datain (cts_dup_0)) ;
+                 defparam cts_obuf.operation_mode = "output";
+                 defparam cts_obuf.output_register_mode = "none";
+                 defparam cts_obuf.tie_off_output_clock_enable = "false";
+                 defparam cts_obuf.oe_register_mode = "none";
+                 defparam cts_obuf.tie_off_oe_clock_enable = "false";
+                 defparam cts_obuf.input_register_mode = "none";
+    cycloneii_io clk_ibuf (.combout (clk_int), .padio (clk)) ;
+                 defparam clk_ibuf.operation_mode = "input";
+                 defparam clk_ibuf.output_register_mode = "none";
+                 defparam clk_ibuf.tie_off_output_clock_enable = "false";
+                 defparam clk_ibuf.oe_register_mode = "none";
+                 defparam clk_ibuf.tie_off_oe_clock_enable = "false";
+                 defparam clk_ibuf.input_register_mode = "none";
+    cycloneii_lcell_comb ix52169z52924 (.combout (nx52169z2), .dataa (mam_dup_0)
+                         , .datab (mad_dup_0), .datac (dtr_int), .datad (rts_int
+                         )) ;
+                         defparam ix52169z52924.lut_mask = 16'h090f;
+    cycloneii_lcell_comb ix52169z52923 (.combout (nx52169z1), .dataa (mam_dup_0)
+                         , .datab (mad_dup_0), .datac (m_int), .datad (nx52169z2
+                         )) ;
+                         defparam ix52169z52923.lut_mask = 16'hfe00;
+    cycloneii_lcell_comb ix53166z52923 (.combout (nx53166z1), .dataa (mam_dup_0)
+                         , .datab (mad_dup_0), .datac (dtr_int), .datad (rts_int
+                         )) ;
+                         defparam ix53166z52923.lut_mask = 16'h0f09;
+    cycloneii_lcell_comb ix48476z52923 (.combout (nx48476z1), .dataa (mam_dup_0)
+                         , .datab (mad_dup_0)) ;
+                         defparam ix48476z52923.lut_mask = 16'h1111;
+endmodule
+

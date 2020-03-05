@@ -1,0 +1,13 @@
+vendor_name = exemplar
+source_file = 1, C:/Users/gse4/Desktop/tp1/precision/../display/display.vhd
+design_name = display
+instance =      comp,            reg_mm(1),            reg_mm(1),              display,         1, 59:-1:59:
+instance =      comp,            reg_mm(0),            reg_mm(0),              display,         1, 69:-1:69:
+instance =      comp,         aff5_obuf(0),         aff5_obuf(0),              display,         1, 60:-1:60:
+instance =      comp,         aff3_obuf(1),         aff3_obuf(1),              display,         1, 61:-1:61:
+instance =      comp,         aff2_obuf(2),         aff2_obuf(2),              display,         1, 62:-1:62:
+instance =       net,           m_dup_0(1),           m_dup_0(1),              display,         1, 59:-1:59:
+instance =       net,           m_dup_0(0),           m_dup_0(0),              display,         1, 69:-1:69:
+instance =       net,              aff2(2),              aff2(2),              display,         1, 62:-1:62:
+instance =       net,              aff3(1),              aff3(1),              display,         1, 61:-1:61:
+instance =       net,              aff5(0),              aff5(0),              display,         1, 60:-1:60:
