@@ -1,0 +1,48 @@
+//  Precision RTL Synthesis 64-bit 2017.1.0.15 (Production Release) Fri Sep 15 05:07:37 PDT 2017
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2017, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 gse4@PCII-01  10.0.18362 x64
+//  
+//  Start time Wed Mar 04 14:52:39 2020
+
+***************************************************************
+Device Utilization for EP2C35F672C
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               9       459       1.96%
+LUTs                              6       33216     0.02%
+Registers                         4       33216     0.01%
+Memory Bits                       0       483840    0.00%
+DSP block 9-bit elems             0       70        0.00%
+---------------------------------------------------------------
+
+***********************************************
+
+Library: work    Cell: ctrlrs232c    View: symb
+
+***********************************************
+
+  Cell                   Library  References     Total Area
+
+ NOT                     cycloneii     4 x
+ cycloneii_io            cycloneii     9 x      1      9 IOs
+ cycloneii_lcell_comb    cycloneii     6 x      1      6 LUTs
+ cycloneii_lcell_ff      cycloneii     4 x      1      4 Registers
+
+ Number of ports :                            9
+ Number of nets :                            28
+ Number of instances :                       23
+ Number of references to this view :          0
+
+Total accumulated area : 
+ Number of IOs :                              9
+ Number of LCs :                              0
+ Number of LUTs :                             6
+ Number of Registers :                        4
+ Number of accumulated instances :           23

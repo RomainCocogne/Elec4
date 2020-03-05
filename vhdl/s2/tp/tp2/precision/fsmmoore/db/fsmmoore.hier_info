@@ -1,0 +1,12 @@
+|ctrlrs232c
+dsr <= dsr_obuf.PADIO
+cts <= cts_obuf.PADIO
+mam <= mam_obuf.PADIO
+mad <= mad_obuf.PADIO
+rst => rst_ibuf.PADIO
+clk => clk_ibuf.PADIO
+m => m_ibuf.PADIO
+dtr => dtr_ibuf.PADIO
+rts => rts_ibuf.PADIO
+
+

@@ -1,0 +1,27 @@
+cd C:/Users/gse4/Desktop/tp1/precision/display_imp_l/simulation/modelsim
+vlib work
+vlib cycloneii
+vmap cycloneii cycloneii
+#compilation des bibliothèques de cellules du cyclone II
+vcom -work cycloneii c:/altera/90sp2/quartus/eda/sim_lib/cycloneii_atoms.vhd
+vcom -work cycloneii c:/altera/90sp2/quartus/eda/sim_lib/cycloneii_components.vhd
+#compilation du .vho
+vcom display.vho
+#compilation du testbench depuis le repertoire sources
+vcom ../../../../display/test_bench_display.vhd
+# Compléter avec les signaux à afficher
+#lancement du simulateur
+vsim -t 1ns work.test(bench_display)
+
+add wave -noupdate -divider {entrees du bloc display}
+add wave -noupdate -radix binary test/UUT/dtr
+add wave -noupdate -radix binary test/UUT/mode
+add wave -noupdate -divider {sorties du bloc display}
+add wave -noupdate -radix binary test/UUT/aff0
+add wave -noupdate -radix binary test/UUT/aff1
+add wave -noupdate -radix binary test/UUT/aff2
+add wave -noupdate -radix binary test/UUT/aff3
+add wave -noupdate -radix binary test/UUT/aff4
+add wave -noupdate -radix binary test/UUT/aff5
+
+run 300ns

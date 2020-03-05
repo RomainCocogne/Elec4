@@ -1,0 +1,31 @@
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.std_logic_unsigned.all;
+
+entity test is
+end entity;
+
+architecture bench_display of test is
+
+component display is
+	port(
+		mode:	std_logic_vector (1 downto 0);
+		dtr, rst, clk:	std_logic;
+		m:	out std_logic_vector (1 downto 0);
+		aff0,aff1,aff2,aff3,aff4,aff5:	out std_logic_vector (6 downto 0)
+	);
+end component;
+
+for UUT:display use entity work.display(beh_display);
+
+signal clk:	std_logic:='1';
+signal dtr, rst:	std_logic;
+signal aff0,aff1,aff2,aff3,aff4,aff5:	std_logic_vector (6 downto 0);
+signal mode: std_logic_vector (1 downto 0);
+begin
+	UUT:display port map (clk=>clk, dtr=>dtr, rst=>rst, mode=>mode,
+				aff0=>aff0, aff1=>aff1, aff2=>aff2, aff3=>aff3, aff4=>aff4, aff5=>aff5);
+	clk <= not clk after 10 ns;
+	dtr <= '1', '0' after 91 ns;
+	mode <= "00", "01" after 40 ns, "10" after 80 ns;
+end architecture;

@@ -1,0 +1,65 @@
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.std_logic_unsigned.all;
+
+entity display is
+	port(
+		mode:	std_logic_vector (1 downto 0);
+		dtr, rst, clk:	std_logic;
+		m:	out std_logic_vector (1 downto 0);
+		aff0,aff1,aff2,aff3,aff4,aff5:	out std_logic_vector (6 downto 0)
+	);
+end entity;
+
+architecture beh_display of display is
+attribute pin_number: string;
+type defarpinnumber is array(natural range <>,natural range <>) of character;
+attribute array_pin_number: defarpinnumber;
+
+attribute pin_number of dtr:signal is "N25"; --SW0
+attribute array_pin_number of aff0:signal is (" V13"," V14","AE12","AD11","AC12","AB12", "AF10");
+attribute array_pin_number of aff1:signal is (" V13"," V14","AE12","AD11","AC12","AB12", "AF10");
+attribute array_pin_number of aff2:signal is (" V13"," V14","AE12","AD11","AC12","AB12", "AF10");
+attribute array_pin_number of aff3:signal is (" V13"," V14","AE12","AD11","AC12","AB12", "AF10");
+attribute array_pin_number of aff4:signal is (" V13"," V14","AE12","AD11","AC12","AB12", "AF10");
+attribute array_pin_number of aff5:signal is (" V13"," V14","AE12","AD11","AC12","AB12", "AF10");
+
+signal mm:	std_logic_vector (1 downto 0);
+
+begin
+	seq: process (clk, rst)
+	begin
+	  if rst ='1' then 
+	    mm <= "00";
+		elsif clk'event and clk = '1' and dtr = '1' then
+			mm <= mode;
+		end if;
+	end process;
+	
+	aff1 <= "1000000";
+	aff0 <= "1000000";
+	aff4 <= "0100001";
+	
+	comb: process (mm)
+	begin
+		case mm is
+			when "00" =>
+			  aff5 <= "0001001";
+				aff3 <= "1111111";
+				aff2 <= "0000000";
+			when "01" =>
+				aff5 <= "0001001";
+				aff3 <= "1111001";
+				aff2 <= "0100100";
+			when "10" | "11" =>
+				aff5 <= "0001110";
+				aff3 <= "1111111";
+				aff2 <= "0011001";
+			when others =>
+			  aff5 <= "0001001";
+				aff3 <= "1111111";
+				aff2 <= "0000000";
+		end case;
+	end process;
+	m <= mm;
+end architecture;

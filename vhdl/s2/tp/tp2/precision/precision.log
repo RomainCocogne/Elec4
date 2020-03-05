@@ -1,0 +1,1957 @@
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/shared/examples/precision.log
+//  Precision RTL Synthesis 64-bit 2017.1.0.15 (Production Release) Fri Sep 15 05:07:37 PDT 2017
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2017, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 gse4@PCII-01  10.0.18362 x64
+//  
+//  Start time Wed Mar 04 14:52:39 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/shared/examples/precision.log
+# COMMAND: new_project -name ctrlrs232c -folder C:/Users/gse4/Desktop/tp2/precision -createimpl_name ctrlrs232c_impl_1
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [9572]: Moving session transcript to file C:/Users/gse4/Desktop/tp2/precision/precision.log
+# Info: [9558]: Created project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp in folder C:/Users/gse4/Desktop/tp2/precision.
+# Info: [9531]: Created directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [9557]: Created implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+# Info: [9578]: The Results Directory has been set to: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/
+# Info: [9569]: Logging project transcript to file C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+new_project -name ctrlrs232c -folder C:/Users/gse4/Desktop/tp2/precision -createimpl_name ctrlrs232c_impl_1
+# COMMAND: add_input_file {synthese.tcl}
+add_input_file {synthese.tcl}
+# COMMAND: dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [579]: The global max fanout is currently set to 1000 for Altera - Cyclone II.
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/techlibs/cycloneii.syn.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[1:0], async set/reset state(s) = 00 , number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                                 00	                            00
+# Info: [40000]: FSM:	    1	             FD	                                 11	                            11
+# Info: [40000]: FSM:	    2	          RECEP	                                 01	                            01
+# Info: [40000]: FSM:	    3	           EMIS	                                 10	                            10
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.5 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [664]: Finished compiling design.
+# Error: [691]: Unable to find specified object(s): m(*) m(*) .
+# Warning: [1006]: set_input_delay failed .
+dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/ctrlrs232c.vhd already exists in the list. Command options ignored.
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/fsmsymb.vhd already exists in the list. Command options ignored.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[1:0], async set/reset state(s) = 00 , number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                                 00	                            00
+# Info: [40000]: FSM:	    1	             FD	                                 11	                            11
+# Info: [40000]: FSM:	    2	          RECEP	                                 01	                            01
+# Info: [40000]: FSM:	    3	           EMIS	                                 10	                            10
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+# Error: [584]: Invalid argument for set_false_path: -clock
+dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/ctrlrs232c.vhd already exists in the list. Command options ignored.
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/fsmsymb.vhd already exists in the list. Command options ignored.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[1:0], async set/reset state(s) = 00 , number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                                 00	                            00
+# Info: [40000]: FSM:	    1	             FD	                                 11	                            11
+# Info: [40000]: FSM:	    2	          RECEP	                                 01	                            01
+# Info: [40000]: FSM:	    3	           EMIS	                                 10	                            10
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.2 secs.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/ctrlrs232c.vhd already exists in the list. Command options ignored.
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/fsmsymb.vhd already exists in the list. Command options ignored.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[1:0], async set/reset state(s) = 00 , number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                                 00	                            00
+# Info: [40000]: FSM:	    1	             FD	                                 11	                            11
+# Info: [40000]: FSM:	    2	          RECEP	                                 01	                            01
+# Info: [40000]: FSM:	    3	           EMIS	                                 10	                            10
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+dofile C:/Users/gse4/Desktop/tp2/precision/synthese.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: setup_design -encoding=binary
+setup_design -encoding=binary
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[1:0], async set/reset state(s) = 00 , number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                                 00	                            00
+# Info: [40000]: FSM:	    1	             FD	                                 11	                            11
+# Info: [40000]: FSM:	    2	          RECEP	                                 01	                            01
+# Info: [40000]: FSM:	    3	           EMIS	                                 10	                            10
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: trace_backward {{port mam}} -register -add -design rtl
+trace_backward {{port mam}} -register -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: trace_backward {{port mad}} -register -add -design rtl
+trace_backward {{port mad}} -register -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: report_area C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c_area.rep -cell_usage
+report_area C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c_area.rep -cell_usage
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:\altera\13.0sp1\quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[1:0], async set/reset state(s) = 00 , number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                                 00	                            00
+# Info: [40000]: FSM:	    1	             FD	                                 11	                            11
+# Info: [40000]: FSM:	    2	          RECEP	                                 01	                            01
+# Info: [40000]: FSM:	    3	           EMIS	                                 10	                            10
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15002]: Optimizing design view:.work.ctrlrs232c.symb
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.edf.
+# Info: Info, Writing xrf file 'C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.xrf'
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.xrf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.tcl
+# Info: exq_pr_compile_project gen_vcf ctrlrs232c 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 1.7 s secs.
+synthesize
+# COMMAND: setup_design -encoding=onehot
+setup_design -encoding=onehot
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[3:0], async set/reset state(s) = 0001 , number of states = 4.
+# Info: [45144]: Re-encoding 4 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                               0001	                          0001
+# Info: [40000]: FSM:	    1	             FD	                               1000	                          0010
+# Info: [40000]: FSM:	    2	          RECEP	                               0010	                          0100
+# Info: [40000]: FSM:	    3	           EMIS	                               0100	                          1000
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.ctrlrs232c(symb), with state variable = etat_courrant[3:0], async set/reset state(s) = 0001 , number of states = 4.
+# Info: [45144]: Re-encoding 4 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	         CONFIG	                               0001	                          0001
+# Info: [40000]: FSM:	    1	             FD	                               1000	                          0010
+# Info: [40000]: FSM:	    2	          RECEP	                               0010	                          0100
+# Info: [40000]: FSM:	    3	           EMIS	                               0100	                          1000
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.4 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: setup_design -reencode_fsm_outputs=false
+setup_design -reencode_fsm_outputs=false
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmsymb.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(symb): Pre-processing...
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[3:0] in module work.ctrlrs232c(symb), because decoding logic needs to be created.
+# Info: [44523]: Root Module work.ctrlrs232c(symb): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.2 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: save_project
+# Info: [9565]: Saved implementation ctrlrs232c_impl_1 in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: trace_forward {{inst reg_etat_courrant(0)} {inst reg_etat_courrant(*)}} -register -add -design rtl
+trace_forward {{inst reg_etat_courrant(0)} {inst reg_etat_courrant(*)}} -register -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: trace_backward {{port mad} {port mam}} -register -add -design rtl
+trace_backward {{port mad} {port mam}} -register -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1.
+# Info: [15002]: Optimizing design view:.work.ctrlrs232c.symb
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.edf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.tcl
+# Info: exq_pr_compile_project gen_vcf ctrlrs232c 1
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1/ctrlrs232c.tcl
+# Info: exq_pr_compile_project gen_vcf ctrlrs232c 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.4 s secs.
+synthesize
+# COMMAND: set_impl_property -impl ctrlrs232c_impl_1 -name fsmsymb
+# Info: [9561]: Renamed directory C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c_impl_1 to C:/Users/gse4/Desktop/tp2/precision/fsmsymb.
+# Info: [9568]: Appending project transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmsymb/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmsymb/precision.log.suppressed
+# Info: [9562]: Renamed file C:/Users/gse4/Desktop/tp2/precision/fsmsymb/ctrlrs232c_impl_1.psi to C:/Users/gse4/Desktop/tp2/precision/fsmsymb/fsmsymb.psi.
+# Info: [9563]: Renamed implementation ctrlrs232c_impl_1 to fsmsymb.
+set_impl_property -impl ctrlrs232c_impl_1 -name fsmsymb
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmsymb in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: new_impl -name fsmmoore -discard
+# Info: [9531]: Created directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [9557]: Created implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+# Info: [9578]: The Results Directory has been set to: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/
+# Info: [9569]: Logging project transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision.log.suppressed
+# Info: [9552]: Activated implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+new_impl -name fsmmoore -discard
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: add_input_file {../ctrlrs232c/ctrlrs232c.vhd ../ctrlrs232c/fsmmoore.vhd}
+add_input_file {../ctrlrs232c/ctrlrs232c.vhd ../ctrlrs232c/fsmmoore.vhd}
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: activate_impl -impl fsmsymb -discard
+# Info: [9578]: The Results Directory has been set to: C:/Users/gse4/Desktop/tp2/precision/fsmsymb/
+# Info: [9568]: Appending project transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmsymb/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmsymb/precision.log.suppressed
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [579]: The global max fanout is currently set to 1000 for Altera - Cyclone II.
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [573]: Setting 'optimize_power_effort' is not allowed in RTL product mode. Ignoring.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/techlibs/cycloneii.syn.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [9552]: Activated implementation fsmsymb in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+activate_impl -impl fsmsymb -discard
+# COMMAND: activate_impl -impl fsmmoore -discard
+# Info: [9578]: The Results Directory has been set to: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/
+# Info: [9568]: Appending project transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision.log.suppressed
+# Warning: [573]: Setting 'optimize_power_effort' is not allowed in RTL product mode. Ignoring.
+# Info: [9552]: Activated implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+activate_impl -impl fsmmoore -discard
+# COMMAND: activate_impl -impl fsmsymb -discard
+# Info: [9578]: The Results Directory has been set to: C:/Users/gse4/Desktop/tp2/precision/fsmsymb/
+# Info: [9568]: Appending project transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmsymb/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmsymb/precision.log.suppressed
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [579]: The global max fanout is currently set to 1000 for Altera - Cyclone II.
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [573]: Setting 'optimize_power_effort' is not allowed in RTL product mode. Ignoring.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/techlibs/cycloneii.syn.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [9552]: Activated implementation fsmsymb in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+activate_impl -impl fsmsymb -discard
+# COMMAND: activate_impl -impl fsmmoore -discard
+# Info: [9578]: The Results Directory has been set to: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/
+# Info: [9568]: Appending project transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision.log.suppressed
+# Warning: [573]: Setting 'optimize_power_effort' is not allowed in RTL product mode. Ignoring.
+# Info: [9552]: Activated implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+activate_impl -impl fsmmoore -discard
+# COMMAND: add_input_file {synthese_moore.tcl}
+add_input_file {synthese_moore.tcl}
+# COMMAND: dofile C:/Users/gse4/Desktop/tp2/precision/synthese_moore.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [579]: The global max fanout is currently set to 1000 for Altera - Cyclone II.
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/ctrlrs232c.vhd already exists in the list. Command options ignored.
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/fsmmoore.vhd already exists in the list. Command options ignored.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/techlibs/cycloneii.syn.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmmoore.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(moore): Pre-processing...
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Info: [44523]: Root Module work.ctrlrs232c(moore): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [664]: Finished compiling design.
+dofile C:/Users/gse4/Desktop/tp2/precision/synthese_moore.tcl
+# COMMAND: trace_backward {{port mam} {port mad}} -register -add -design rtl
+trace_backward {{port mam} {port mad}} -register -add -design rtl
+# COMMAND: view_trace_schematic -design rtl
+view_trace_schematic -design rtl
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [15002]: Optimizing design view:.work.ctrlrs232c.moore
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.edf.
+# Info: Info, Writing xrf file 'C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.xrf'
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.xrf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: exq_pr_compile_project gen_vcf fsmmoore 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.3 s secs.
+synthesize
+# COMMAND: reset_trace -design rtl
+reset_trace -design rtl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: place_and_route cl
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: exq_pr_compile_project cl fsmmoore 1
+# Info: -- starting QUARTUS II ...
+# Info: Running C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: -chdir C:/Users/gse4/Desktop/tp2/precision/fsmmoore C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: PNR COMMAND: C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Shell
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+# Info: [715]:     Info: Your use of Altera Corporation's design tools, logic functions 
+# Info: [715]:     Info: and other software and tools, and its AMPP partner logic 
+# Info: [715]:     Info: functions, and any output files from any of the foregoing 
+# Info: [715]:     Info: (including device programming or simulation files), and any 
+# Info: [715]:     Info: associated documentation or information are expressly subject 
+# Info: [715]:     Info: to the terms and conditions of the Altera Program License 
+# Info: [715]:     Info: Subscription Agreement, Altera MegaCore Function License 
+# Info: [715]:     Info: Agreement, or other applicable license agreement, including, 
+# Info: [715]:     Info: without limitation, that your use is for the sole purpose of 
+# Info: [715]:     Info: programming logic devices manufactured by Altera and sold by 
+# Info: [715]:     Info: Altera or its authorized distributors.  Please refer to the 
+# Info: [715]:     Info: applicable agreement for further details.
+# Info: [715]:     Info: Processing started: Wed Mar 04 15:45:46 2020
+# Info: [715]: Info: Command: quartus_sh -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: [715]: Info (125061): Changed top-level design entity name to "ctrlrs232c"
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Analysis & Synthesis
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 15:45:53 2020
+# Info: [715]: Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (12021): Found 1 design units, including 1 entities, in source file fsmmoore.vqm
+# Info: [715]:     Info (12023): Found entity 1: ctrlrs232c
+# Info: [715]: Info (12127): Elaborating entity "ctrlrs232c" for the top level hierarchy
+# Info: [715]: Info (16010): Generating hard_block partition "auto_generated_inst"
+# Info: [715]:     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+# Info: [715]: Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+# Info: [715]:     Info (21058): Implemented 5 input pins
+# Info: [715]:     Info (21059): Implemented 4 output pins
+# Info: [715]:     Info (21061): Implemented 6 logic cells
+# Info: [715]: Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4612 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 15:46:01 2020
+# Info: [715]:     Info: Elapsed time: 00:00:08
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Fitter
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 15:46:02 2020
+# Info: [715]: Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info: qfit2_default_script.tcl version: #1
+# Info: [715]: Info: Project  = fsmmoore
+# Info: [715]: Info: Revision = fsmmoore
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (119006): Selected device EP2C35F672C6 for design "fsmmoore"
+# Info: [715]: Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+# Info: [715]: Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+# Info: [715]:     Info (176445): Device EP2C50F672C6 is compatible
+# Info: [715]:     Info (176445): Device EP2C70F672C6 is compatible
+# Info: [715]: Info (169124): Fitter converted 3 user pins into dedicated programming pins
+# Info: [715]:     Info (169125): Pin ~ASDO~ is reserved at location E3
+# Info: [715]:     Info (169125): Pin ~nCSO~ is reserved at location D3
+# Info: [715]:     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
+# Info: [715]: Critical Warning (169085): No exact pin location assignment(s) for 9 pins of 9 total pins
+# Info: [715]:     Info (169086): Pin dsr not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin cts not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin mam not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin mad not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin dtr not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin rts not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin clk not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin rst not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin m not assigned to an exact location on the device
+# Info: [715]: Info (332104): Reading SDC File: 'fsmmoore_pnr_constraints.sdc'
+# Info: [715]: Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+# Info: [715]: Info (332111): Found 1 clocks
+# Info: [715]:     Info (332111):   Period   Clock Name
+# Info: [715]:     Info (332111): ======== ============
+# Info: [715]:     Info (332111): 1000.000          clk
+# Info: [715]: Info (176353): Automatically promoted node clk (placed in PIN P2 (CLK2, LVDSCLK1p, Input))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
+# Info: [715]: Info (176353): Automatically promoted node rst (placed in PIN P1 (CLK3, LVDSCLK1n, Input))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G1
+# Info: [715]: Info (176233): Starting register packing
+# Info: [715]: Info (176235): Finished register packing
+# Info: [715]:     Extra Info (176219): No registers were packed into other blocks
+# Info: [715]: Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+# Info: [715]:     Info (176211): Number of I/O pins in group: 7 (unused VREF, 3.3V VCCIO, 3 input, 4 output, 0 bidirectional)
+# Info: [715]:         Info (176212): I/O standards used: 3.3-V LVTTL.
+# Info: [715]: Info (176215): I/O bank details before I/O pin placement
+# Info: [715]:     Info (176214): Statistics of I/O banks
+# Info: [715]:         Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  62 pins available
+# Info: [715]:         Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  57 pins available
+# Info: [715]:         Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+# Info: [715]:         Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+# Info: [715]:         Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  65 pins available
+# Info: [715]:         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
+# Info: [715]:         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+# Info: [715]:         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+# Info: [715]: Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+# Info: [715]: Info (170189): Fitter placement preparation operations beginning
+# Info: [715]: Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170191): Fitter placement operations beginning
+# Info: [715]: Info (170137): Fitter placement was successful
+# Info: [715]: Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170193): Fitter routing operations beginning
+# Info: [715]: Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+# Info: [715]:     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X22_Y24 to location X32_Y36
+# Info: [715]: Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+# Info: [715]:     Info (170201): Optimizations that may affect the design's routability were skipped
+# Info: [715]:     Info (170200): Optimizations that may affect the design's timing were skipped
+# Info: [715]: Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Warning (306006): Found 4 output pins without output pin load capacitance assignment
+# Info: [715]:     Info (306007): Pin "dsr" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "cts" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "mam" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "mad" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+# Info: [715]: Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
+# Info: [715]: Info (144001): Generated suppressed messages file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.fit.smsg
+# Info: [715]: Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
+# Info: [715]:     Info: Peak virtual memory: 5344 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 15:46:14 2020
+# Info: [715]:     Info: Elapsed time: 00:00:12
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:06
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 15:46:15 2020
+# Info: [715]: Info: Command: quartus_sta fsmmoore -c fsmmoore --do_report_timing
+# Info: [715]: Info: qsta_default_script.tcl version: #1
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (332104): Reading SDC File: 'fsmmoore_pnr_constraints.sdc'
+# Info: [715]: Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+# Info: [715]: Info: Analyzing Slow Model
+# Info: [715]: Info (332146): Worst-case setup slack is 988.053
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   988.053         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 0.391
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     0.391         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 988.053
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 988.053 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mad_obuf~data_in_reg
+# Info: [715]:     Info (332115): To Node      : mad
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.699      2.699  R        clock network delay
+# Info: [715]:     Info (332115):      2.852      0.153     uTco  mad_obuf~data_in_reg
+# Info: [715]:     Info (332115):      5.947      3.095 RR  CELL  mad
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    994.000     -6.000  R  oExt  mad
+# Info: [715]:     Info (332115): Data Arrival Time  :     5.947
+# Info: [715]:     Info (332115): Data Required Time :   994.000
+# Info: [715]:     Info (332115): Slack              :   988.053 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.391
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 0.391 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mam_dup_0
+# Info: [715]:     Info (332115): To Node      : mam_dup_0
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.698      2.698  R        clock network delay
+# Info: [715]:     Info (332115):      2.948      0.250     uTco  mam_dup_0
+# Info: [715]:     Info (332115):      2.948      0.000 RR  CELL  reg_etat_courrant_1_|regout
+# Info: [715]:     Info (332115):      2.948      0.000 RR    IC  ix53166z52923|datac
+# Info: [715]:     Info (332115):      3.271      0.323 RR  CELL  ix53166z52923|combout
+# Info: [715]:     Info (332115):      3.271      0.000 RR    IC  reg_etat_courrant_1_|datain
+# Info: [715]:     Info (332115):      3.355      0.084 RR  CELL  mam_dup_0
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      2.698      2.698  R        clock network delay
+# Info: [715]:     Info (332115):      2.964      0.266      uTh  mam_dup_0
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.355
+# Info: [715]:     Info (332115): Data Required Time :     2.964
+# Info: [715]:     Info (332115): Slack              :     0.391 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : mad_dup_0
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.999      0.999 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      1.117      0.118 RR    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):      1.117      0.000 RR  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):      2.161      1.044 RR    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):      2.698      0.537 RR  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.999      0.999 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    501.117      0.118 FF    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):    501.117      0.000 FF  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):    502.161      1.044 FF    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):    502.698      0.537 FF  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info: Analyzing Fast Model
+# Info: [715]: Info (332146): Worst-case setup slack is 990.605
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   990.605         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 0.215
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     0.215         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 990.605
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 990.605 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mad_obuf~data_in_reg
+# Info: [715]:     Info (332115): To Node      : mad
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.620      1.620  R        clock network delay
+# Info: [715]:     Info (332115):      1.718      0.098     uTco  mad_obuf~data_in_reg
+# Info: [715]:     Info (332115):      3.395      1.677 RR  CELL  mad
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    994.000     -6.000  R  oExt  mad
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.395
+# Info: [715]:     Info (332115): Data Required Time :   994.000
+# Info: [715]:     Info (332115): Slack              :   990.605 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.215
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 0.215 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mam_dup_0
+# Info: [715]:     Info (332115): To Node      : mam_dup_0
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.671      1.671  R        clock network delay
+# Info: [715]:     Info (332115):      1.812      0.141     uTco  mam_dup_0
+# Info: [715]:     Info (332115):      1.812      0.000 RR  CELL  reg_etat_courrant_1_|regout
+# Info: [715]:     Info (332115):      1.812      0.000 RR    IC  ix53166z52923|datac
+# Info: [715]:     Info (332115):      1.996      0.184 RR  CELL  ix53166z52923|combout
+# Info: [715]:     Info (332115):      1.996      0.000 RR    IC  reg_etat_courrant_1_|datain
+# Info: [715]:     Info (332115):      2.038      0.042 RR  CELL  mam_dup_0
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      1.671      1.671  R        clock network delay
+# Info: [715]:     Info (332115):      1.823      0.152      uTh  mam_dup_0
+# Info: [715]:     Info (332115): Data Arrival Time  :     2.038
+# Info: [715]:     Info (332115): Data Required Time :     1.823
+# Info: [715]:     Info (332115): Slack              :     0.215 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : mad_dup_0
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.581      0.581 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      0.652      0.071 RR    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):      0.652      0.000 RR  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):      1.349      0.697 RR    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):      1.671      0.322 RR  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.581      0.581 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    500.652      0.071 FF    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):    500.652      0.000 FF  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):    501.349      0.697 FF    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):    501.671      0.322 FF  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info (332102): Design is not fully constrained for setup requirements
+# Info: [715]: Info (332102): Design is not fully constrained for hold requirements
+# Info: [715]: Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4582 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 15:46:19 2020
+# Info: [715]:     Info: Elapsed time: 00:00:04
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Assembler
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 15:46:21 2020
+# Info: [715]: Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (115031): Writing out detailed assembly data for power analysis
+# Info: [715]: Info (115030): Assembler is generating device programming files
+# Info: [715]: Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4581 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 15:46:26 2020
+# Info: [715]:     Info: Elapsed time: 00:00:05
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:02
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit EDA Netlist Writer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 15:46:27 2020
+# Info: [715]: Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (204026): Generated files "fsmmoore.vho", "fsmmoore_fast.vho", "fsmmoore_vhd.sdo" and "fsmmoore_vhd_fast.sdo" in directory "C:/Users/gse4/Desktop/tp2/precision/fsmmoore/simulation/modelsim/" for EDA simulation tool
+# Info: [715]: Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4537 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 15:46:30 2020
+# Info: [715]:     Info: Elapsed time: 00:00:03
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info (23030): Evaluation of Tcl script C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl was successful
+# Info: [715]: Info: Quartus II 64-Bit Shell was successful. 0 errors, 9 warnings
+# Info: [715]:     Info: Peak virtual memory: 4339 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 15:46:33 2020
+# Info: [715]:     Info: Elapsed time: 00:00:47
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+place_and_route cl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: set_attribute -name pin_number -value "N2" -port clk -design rtl
+set_attribute -name pin_number -value "N2" -port clk -design rtl
+# COMMAND: set_attribute -name pin_number -value "AE22" -port cts -design rtl
+set_attribute -name pin_number -value "AE22" -port cts -design rtl
+# COMMAND: set_attribute -name pin_number -value "AF22" -port dsr -design rtl
+set_attribute -name pin_number -value "AF22" -port dsr -design rtl
+# COMMAND: set_attribute -name pin_number -value "N25" -port dtr -design rtl
+set_attribute -name pin_number -value "N25" -port dtr -design rtl
+# COMMAND: set_attribute -name pin_number -value "V2" -port m -design rtl
+set_attribute -name pin_number -value "V2" -port m -design rtl
+# COMMAND: set_attribute -name pin_number -value "T19" -port mad -design rtl
+set_attribute -name pin_number -value "T19" -port mad -design rtl
+# COMMAND: set_attribute -name pin_number -value "U20" -port mam -design rtl
+set_attribute -name pin_number -value "U20" -port mam -design rtl
+# COMMAND: set_attribute -name pin_number -value "W26" -port rst -design rtl
+set_attribute -name pin_number -value "W26" -port rst -design rtl
+# COMMAND: set_attribute -name pin_number -value "N26" -port rts -design rtl
+set_attribute -name pin_number -value "N26" -port rts -design rtl
+# COMMAND: place_and_route cl
+# Warning: Moving C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.qsf to C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore_save.qsf
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: exq_pr_compile_project cl fsmmoore 1
+# Info: -- starting QUARTUS II ...
+# Info: Running C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: -chdir C:/Users/gse4/Desktop/tp2/precision/fsmmoore C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: PNR COMMAND: C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Shell
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+# Info: [715]:     Info: Your use of Altera Corporation's design tools, logic functions 
+# Info: [715]:     Info: and other software and tools, and its AMPP partner logic 
+# Info: [715]:     Info: functions, and any output files from any of the foregoing 
+# Info: [715]:     Info: (including device programming or simulation files), and any 
+# Info: [715]:     Info: associated documentation or information are expressly subject 
+# Info: [715]:     Info: to the terms and conditions of the Altera Program License 
+# Info: [715]:     Info: Subscription Agreement, Altera MegaCore Function License 
+# Info: [715]:     Info: Agreement, or other applicable license agreement, including, 
+# Info: [715]:     Info: without limitation, that your use is for the sole purpose of 
+# Info: [715]:     Info: programming logic devices manufactured by Altera and sold by 
+# Info: [715]:     Info: Altera or its authorized distributors.  Please refer to the 
+# Info: [715]:     Info: applicable agreement for further details.
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:11:12 2020
+# Info: [715]: Info: Command: quartus_sh -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: [715]: Info (125061): Changed top-level design entity name to "ctrlrs232c"
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Analysis & Synthesis
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:11:13 2020
+# Info: [715]: Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (12021): Found 1 design units, including 1 entities, in source file fsmmoore.vqm
+# Info: [715]:     Info (12023): Found entity 1: ctrlrs232c
+# Info: [715]: Info (12127): Elaborating entity "ctrlrs232c" for the top level hierarchy
+# Info: [715]: Info (16010): Generating hard_block partition "auto_generated_inst"
+# Info: [715]:     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+# Info: [715]: Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+# Info: [715]:     Info (21058): Implemented 5 input pins
+# Info: [715]:     Info (21059): Implemented 4 output pins
+# Info: [715]:     Info (21061): Implemented 6 logic cells
+# Info: [715]: Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4617 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:11:17 2020
+# Info: [715]:     Info: Elapsed time: 00:00:04
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Fitter
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:11:18 2020
+# Info: [715]: Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info: qfit2_default_script.tcl version: #1
+# Info: [715]: Info: Project  = fsmmoore
+# Info: [715]: Info: Revision = fsmmoore
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (119006): Selected device EP2C35F672C6 for design "fsmmoore"
+# Info: [715]: Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+# Info: [715]: Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+# Info: [715]:     Info (176445): Device EP2C50F672C6 is compatible
+# Info: [715]:     Info (176445): Device EP2C70F672C6 is compatible
+# Info: [715]: Info (169124): Fitter converted 3 user pins into dedicated programming pins
+# Info: [715]:     Info (169125): Pin ~ASDO~ is reserved at location E3
+# Info: [715]:     Info (169125): Pin ~nCSO~ is reserved at location D3
+# Info: [715]:     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
+# Info: [715]: Critical Warning (169085): No exact pin location assignment(s) for 9 pins of 9 total pins
+# Info: [715]:     Info (169086): Pin dsr not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin cts not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin mam not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin mad not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin dtr not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin rts not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin clk not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin rst not assigned to an exact location on the device
+# Info: [715]:     Info (169086): Pin m not assigned to an exact location on the device
+# Info: [715]: Info (332104): Reading SDC File: 'fsmmoore_pnr_constraints.sdc'
+# Info: [715]: Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+# Info: [715]: Info (332111): Found 1 clocks
+# Info: [715]:     Info (332111):   Period   Clock Name
+# Info: [715]:     Info (332111): ======== ============
+# Info: [715]:     Info (332111): 1000.000          clk
+# Info: [715]: Info (176353): Automatically promoted node clk (placed in PIN P2 (CLK2, LVDSCLK1p, Input))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
+# Info: [715]: Info (176353): Automatically promoted node rst (placed in PIN P1 (CLK3, LVDSCLK1n, Input))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G1
+# Info: [715]: Info (176233): Starting register packing
+# Info: [715]: Info (176235): Finished register packing
+# Info: [715]:     Extra Info (176219): No registers were packed into other blocks
+# Info: [715]: Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+# Info: [715]:     Info (176211): Number of I/O pins in group: 7 (unused VREF, 3.3V VCCIO, 3 input, 4 output, 0 bidirectional)
+# Info: [715]:         Info (176212): I/O standards used: 3.3-V LVTTL.
+# Info: [715]: Info (176215): I/O bank details before I/O pin placement
+# Info: [715]:     Info (176214): Statistics of I/O banks
+# Info: [715]:         Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  62 pins available
+# Info: [715]:         Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  57 pins available
+# Info: [715]:         Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+# Info: [715]:         Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+# Info: [715]:         Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  65 pins available
+# Info: [715]:         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
+# Info: [715]:         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+# Info: [715]:         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+# Info: [715]: Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+# Info: [715]: Info (170189): Fitter placement preparation operations beginning
+# Info: [715]: Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170191): Fitter placement operations beginning
+# Info: [715]: Info (170137): Fitter placement was successful
+# Info: [715]: Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170193): Fitter routing operations beginning
+# Info: [715]: Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+# Info: [715]:     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X22_Y24 to location X32_Y36
+# Info: [715]: Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+# Info: [715]:     Info (170201): Optimizations that may affect the design's routability were skipped
+# Info: [715]:     Info (170200): Optimizations that may affect the design's timing were skipped
+# Info: [715]: Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Warning (306006): Found 4 output pins without output pin load capacitance assignment
+# Info: [715]:     Info (306007): Pin "dsr" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "cts" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "mam" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "mad" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+# Info: [715]: Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
+# Info: [715]: Info (144001): Generated suppressed messages file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.fit.smsg
+# Info: [715]: Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
+# Info: [715]:     Info: Peak virtual memory: 5345 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:11:25 2020
+# Info: [715]:     Info: Elapsed time: 00:00:07
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:06
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:11:26 2020
+# Info: [715]: Info: Command: quartus_sta fsmmoore -c fsmmoore --do_report_timing
+# Info: [715]: Info: qsta_default_script.tcl version: #1
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (332104): Reading SDC File: 'fsmmoore_pnr_constraints.sdc'
+# Info: [715]: Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+# Info: [715]: Info: Analyzing Slow Model
+# Info: [715]: Info (332146): Worst-case setup slack is 988.053
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   988.053         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 0.391
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     0.391         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 988.053
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 988.053 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mad_obuf~data_in_reg
+# Info: [715]:     Info (332115): To Node      : mad
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.699      2.699  R        clock network delay
+# Info: [715]:     Info (332115):      2.852      0.153     uTco  mad_obuf~data_in_reg
+# Info: [715]:     Info (332115):      5.947      3.095 RR  CELL  mad
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    994.000     -6.000  R  oExt  mad
+# Info: [715]:     Info (332115): Data Arrival Time  :     5.947
+# Info: [715]:     Info (332115): Data Required Time :   994.000
+# Info: [715]:     Info (332115): Slack              :   988.053 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.391
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 0.391 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mam_dup_0
+# Info: [715]:     Info (332115): To Node      : mam_dup_0
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.698      2.698  R        clock network delay
+# Info: [715]:     Info (332115):      2.948      0.250     uTco  mam_dup_0
+# Info: [715]:     Info (332115):      2.948      0.000 RR  CELL  reg_etat_courrant_1_|regout
+# Info: [715]:     Info (332115):      2.948      0.000 RR    IC  ix53166z52923|datac
+# Info: [715]:     Info (332115):      3.271      0.323 RR  CELL  ix53166z52923|combout
+# Info: [715]:     Info (332115):      3.271      0.000 RR    IC  reg_etat_courrant_1_|datain
+# Info: [715]:     Info (332115):      3.355      0.084 RR  CELL  mam_dup_0
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      2.698      2.698  R        clock network delay
+# Info: [715]:     Info (332115):      2.964      0.266      uTh  mam_dup_0
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.355
+# Info: [715]:     Info (332115): Data Required Time :     2.964
+# Info: [715]:     Info (332115): Slack              :     0.391 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : mad_dup_0
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.999      0.999 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      1.117      0.118 RR    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):      1.117      0.000 RR  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):      2.161      1.044 RR    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):      2.698      0.537 RR  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.999      0.999 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    501.117      0.118 FF    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):    501.117      0.000 FF  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):    502.161      1.044 FF    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):    502.698      0.537 FF  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info: Analyzing Fast Model
+# Info: [715]: Info (332146): Worst-case setup slack is 990.605
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   990.605         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 0.215
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     0.215         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 990.605
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 990.605 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mad_obuf~data_in_reg
+# Info: [715]:     Info (332115): To Node      : mad
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.620      1.620  R        clock network delay
+# Info: [715]:     Info (332115):      1.718      0.098     uTco  mad_obuf~data_in_reg
+# Info: [715]:     Info (332115):      3.395      1.677 RR  CELL  mad
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    994.000     -6.000  R  oExt  mad
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.395
+# Info: [715]:     Info (332115): Data Required Time :   994.000
+# Info: [715]:     Info (332115): Slack              :   990.605 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.215
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 0.215 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mam_dup_0
+# Info: [715]:     Info (332115): To Node      : mam_dup_0
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.671      1.671  R        clock network delay
+# Info: [715]:     Info (332115):      1.812      0.141     uTco  mam_dup_0
+# Info: [715]:     Info (332115):      1.812      0.000 RR  CELL  reg_etat_courrant_1_|regout
+# Info: [715]:     Info (332115):      1.812      0.000 RR    IC  ix53166z52923|datac
+# Info: [715]:     Info (332115):      1.996      0.184 RR  CELL  ix53166z52923|combout
+# Info: [715]:     Info (332115):      1.996      0.000 RR    IC  reg_etat_courrant_1_|datain
+# Info: [715]:     Info (332115):      2.038      0.042 RR  CELL  mam_dup_0
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      1.671      1.671  R        clock network delay
+# Info: [715]:     Info (332115):      1.823      0.152      uTh  mam_dup_0
+# Info: [715]:     Info (332115): Data Arrival Time  :     2.038
+# Info: [715]:     Info (332115): Data Required Time :     1.823
+# Info: [715]:     Info (332115): Slack              :     0.215 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : mad_dup_0
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.581      0.581 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      0.652      0.071 RR    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):      0.652      0.000 RR  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):      1.349      0.697 RR    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):      1.671      0.322 RR  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.581      0.581 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    500.652      0.071 FF    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):    500.652      0.000 FF  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):    501.349      0.697 FF    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):    501.671      0.322 FF  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info (332102): Design is not fully constrained for setup requirements
+# Info: [715]: Info (332102): Design is not fully constrained for hold requirements
+# Info: [715]: Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4582 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:11:29 2020
+# Info: [715]:     Info: Elapsed time: 00:00:03
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Assembler
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:11:30 2020
+# Info: [715]: Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (115031): Writing out detailed assembly data for power analysis
+# Info: [715]: Info (115030): Assembler is generating device programming files
+# Info: [715]: Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4581 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:11:34 2020
+# Info: [715]:     Info: Elapsed time: 00:00:04
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:02
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit EDA Netlist Writer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:11:35 2020
+# Info: [715]: Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (204026): Generated files "fsmmoore.vho", "fsmmoore_fast.vho", "fsmmoore_vhd.sdo" and "fsmmoore_vhd_fast.sdo" in directory "C:/Users/gse4/Desktop/tp2/precision/fsmmoore/simulation/modelsim/" for EDA simulation tool
+# Info: [715]: Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4537 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:11:38 2020
+# Info: [715]:     Info: Elapsed time: 00:00:03
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info (23030): Evaluation of Tcl script C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl was successful
+# Info: [715]: Info: Quartus II 64-Bit Shell was successful. 0 errors, 9 warnings
+# Info: [715]:     Info: Peak virtual memory: 4326 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:11:41 2020
+# Info: [715]:     Info: Elapsed time: 00:00:29
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:02
+place_and_route cl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp2/precision/synthese_moore.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/ctrlrs232c.vhd already exists in the list. Command options ignored.
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/fsmmoore.vhd already exists in the list. Command options ignored.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmmoore.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(moore): Pre-processing...
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Info: [44523]: Root Module work.ctrlrs232c(moore): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+dofile C:/Users/gse4/Desktop/tp2/precision/synthese_moore.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: dofile C:/Users/gse4/Desktop/tp2/precision/synthese_moore.tcl
+# Info: [9577]: Input directory: C:/Users/gse4/Desktop/tp2/precision
+# Info: [15300]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [15326]: Setting Part to: "EP2C35F672C".
+# Info: [15327]: Setting Process to: "6".
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/ctrlrs232c.vhd already exists in the list. Command options ignored.
+# Warning: [15239]: Input file C:/Users/gse4/Desktop/tp2/ctrlrs232c/fsmmoore.vhd already exists in the list. Command options ignored.
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmmoore.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(moore): Pre-processing...
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Info: [44523]: Root Module work.ctrlrs232c(moore): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.4 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+dofile C:/Users/gse4/Desktop/tp2/precision/synthese_moore.tcl
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: compile
+# Info: [638]: Loading library initialization file C:/MentorGraphics/PS2017.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2017a.11
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2017a.11
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/ctrlrs232c.vhd" ...
+# Info: [42502]: Analyzing input file "C:/Users/gse4/Desktop/tp2/precision/../ctrlrs232c/fsmmoore.vhd" ...
+# Info: [663]: Top module of the design is set to: ctrlrs232c.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 13:59:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2017a.11
+# Info: [40000]: Last compiled on Sep 15 2017 14:07:03
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.ctrlrs232c(moore): Pre-processing...
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Warning: [45766]: Disabling FSM Extraction for state variable etat_courrant[1:0] in module work.ctrlrs232c(moore), because decoding logic needs to be created.
+# Info: [44523]: Root Module work.ctrlrs232c(moore): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 81.
+# Info: [44835]: Total CPU time for compilation: 0.4 secs.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/precision_rtl.sdc.
+# Info: [664]: Finished compiling design.
+compile
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: synthesize
+# Info: [661]: Current working directory: C:/Users/gse4/Desktop/tp2/precision/fsmmoore.
+# Info: [15002]: Optimizing design view:.work.ctrlrs232c.moore
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.edf.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.xrf.
+# Warning: Moving C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.qsf to C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore_save.qsf
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: exq_pr_compile_project gen_vcf fsmmoore 1
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.vqm.
+# Info: [3027]: Writing file: C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.xrf.
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: exq_pr_compile_project gen_vcf fsmmoore 1
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [664]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2247279599 h 12 m 55.8 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.5 s secs.
+synthesize
+# COMMAND: save_project
+# Info: [9565]: Saved implementation fsmmoore in project C:/Users/gse4/Desktop/tp2/precision/ctrlrs232c.psp.
+save_project
+# COMMAND: place_and_route cl
+# Info: -- Writing file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: exq_pr_compile_project cl fsmmoore 1
+# Info: -- starting QUARTUS II ...
+# Info: Running C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: -chdir C:/Users/gse4/Desktop/tp2/precision/fsmmoore C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: PNR COMMAND: C:/altera/13.0sp1/quartus/bin64/quartus_sh.exe -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Shell
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+# Info: [715]:     Info: Your use of Altera Corporation's design tools, logic functions 
+# Info: [715]:     Info: and other software and tools, and its AMPP partner logic 
+# Info: [715]:     Info: functions, and any output files from any of the foregoing 
+# Info: [715]:     Info: (including device programming or simulation files), and any 
+# Info: [715]:     Info: associated documentation or information are expressly subject 
+# Info: [715]:     Info: to the terms and conditions of the Altera Program License 
+# Info: [715]:     Info: Subscription Agreement, Altera MegaCore Function License 
+# Info: [715]:     Info: Agreement, or other applicable license agreement, including, 
+# Info: [715]:     Info: without limitation, that your use is for the sole purpose of 
+# Info: [715]:     Info: programming logic devices manufactured by Altera and sold by 
+# Info: [715]:     Info: Altera or its authorized distributors.  Please refer to the 
+# Info: [715]:     Info: applicable agreement for further details.
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:16:00 2020
+# Info: [715]: Info: Command: quartus_sh -t C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl
+# Info: [715]: Info (125061): Changed top-level design entity name to "ctrlrs232c"
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Analysis & Synthesis
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:16:02 2020
+# Info: [715]: Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (12021): Found 1 design units, including 1 entities, in source file fsmmoore.vqm
+# Info: [715]:     Info (12023): Found entity 1: ctrlrs232c
+# Info: [715]: Info (12127): Elaborating entity "ctrlrs232c" for the top level hierarchy
+# Info: [715]: Info (16010): Generating hard_block partition "auto_generated_inst"
+# Info: [715]:     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+# Info: [715]: Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+# Info: [715]:     Info (21058): Implemented 5 input pins
+# Info: [715]:     Info (21059): Implemented 4 output pins
+# Info: [715]:     Info (21061): Implemented 6 logic cells
+# Info: [715]: Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4617 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:16:05 2020
+# Info: [715]:     Info: Elapsed time: 00:00:03
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Fitter
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:16:06 2020
+# Info: [715]: Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info: qfit2_default_script.tcl version: #1
+# Info: [715]: Info: Project  = fsmmoore
+# Info: [715]: Info: Revision = fsmmoore
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (119006): Selected device EP2C35F672C6 for design "fsmmoore"
+# Info: [715]: Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+# Info: [715]: Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+# Info: [715]:     Info (176445): Device EP2C50F672C6 is compatible
+# Info: [715]:     Info (176445): Device EP2C70F672C6 is compatible
+# Info: [715]: Info (169124): Fitter converted 3 user pins into dedicated programming pins
+# Info: [715]:     Info (169125): Pin ~ASDO~ is reserved at location E3
+# Info: [715]:     Info (169125): Pin ~nCSO~ is reserved at location D3
+# Info: [715]:     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
+# Info: [715]: Info (332104): Reading SDC File: 'fsmmoore_pnr_constraints.sdc'
+# Info: [715]: Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+# Info: [715]: Info (332111): Found 1 clocks
+# Info: [715]:     Info (332111):   Period   Clock Name
+# Info: [715]:     Info (332111): ======== ============
+# Info: [715]:     Info (332111): 1000.000          clk
+# Info: [715]: Info (176353): Automatically promoted node clk (placed in PIN N2 (CLK0, LVDSCLK0p, Input))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
+# Info: [715]: Info (176353): Automatically promoted node rst (placed in PIN W26 (LVDS139p, CDPCLK4/DQS3R/CQ3R#))
+# Info: [715]:     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G7
+# Info: [715]: Info (176233): Starting register packing
+# Info: [715]: Info (176235): Finished register packing
+# Info: [715]:     Extra Info (176219): No registers were packed into other blocks
+# Info: [715]: Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+# Info: [715]: Info (170189): Fitter placement preparation operations beginning
+# Info: [715]: Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170191): Fitter placement operations beginning
+# Info: [715]: Info (170137): Fitter placement was successful
+# Info: [715]: Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170193): Fitter routing operations beginning
+# Info: [715]: Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+# Info: [715]:     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X55_Y12 to location X65_Y23
+# Info: [715]: Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+# Info: [715]: Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+# Info: [715]:     Info (170201): Optimizations that may affect the design's routability were skipped
+# Info: [715]:     Info (170200): Optimizations that may affect the design's timing were skipped
+# Info: [715]: Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Warning (306006): Found 4 output pins without output pin load capacitance assignment
+# Info: [715]:     Info (306007): Pin "dsr" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "cts" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "mam" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]:     Info (306007): Pin "mad" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (306004): Started post-fitting delay annotation
+# Info: [715]: Info (306005): Delay annotation completed successfully
+# Info: [715]: Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+# Info: [715]: Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
+# Info: [715]: Info (144001): Generated suppressed messages file C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.fit.smsg
+# Info: [715]: Info: Quartus II 64-Bit Fitter was successful. 0 errors, 3 warnings
+# Info: [715]:     Info: Peak virtual memory: 5336 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:16:13 2020
+# Info: [715]:     Info: Elapsed time: 00:00:07
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:06
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:16:13 2020
+# Info: [715]: Info: Command: quartus_sta fsmmoore -c fsmmoore --do_report_timing
+# Info: [715]: Info: qsta_default_script.tcl version: #1
+# Info: [715]: Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+# Info: [715]: Info (332104): Reading SDC File: 'fsmmoore_pnr_constraints.sdc'
+# Info: [715]: Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+# Info: [715]: Info: Analyzing Slow Model
+# Info: [715]: Info (332146): Worst-case setup slack is 988.418
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   988.418         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 0.391
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     0.391         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 988.418
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 988.418 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mad_obuf~data_in_reg
+# Info: [715]:     Info (332115): To Node      : mad
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.522      2.522  R        clock network delay
+# Info: [715]:     Info (332115):      2.677      0.155     uTco  mad_obuf~data_in_reg
+# Info: [715]:     Info (332115):      5.582      2.905 RR  CELL  mad
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    994.000     -6.000  R  oExt  mad
+# Info: [715]:     Info (332115): Data Arrival Time  :     5.582
+# Info: [715]:     Info (332115): Data Required Time :   994.000
+# Info: [715]:     Info (332115): Slack              :   988.418 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.391
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 0.391 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mam_dup_0
+# Info: [715]:     Info (332115): To Node      : mam_dup_0
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      2.668      2.668  R        clock network delay
+# Info: [715]:     Info (332115):      2.918      0.250     uTco  mam_dup_0
+# Info: [715]:     Info (332115):      2.918      0.000 RR  CELL  reg_etat_courrant_1_|regout
+# Info: [715]:     Info (332115):      2.918      0.000 RR    IC  ix53166z52923|datac
+# Info: [715]:     Info (332115):      3.241      0.323 RR  CELL  ix53166z52923|combout
+# Info: [715]:     Info (332115):      3.241      0.000 RR    IC  reg_etat_courrant_1_|datain
+# Info: [715]:     Info (332115):      3.325      0.084 RR  CELL  mam_dup_0
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      2.668      2.668  R        clock network delay
+# Info: [715]:     Info (332115):      2.934      0.266      uTh  mam_dup_0
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.325
+# Info: [715]:     Info (332115): Data Required Time :     2.934
+# Info: [715]:     Info (332115): Slack              :     0.391 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : mad_dup_0
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.999      0.999 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      1.117      0.118 RR    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):      1.117      0.000 RR  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):      2.131      1.014 RR    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):      2.668      0.537 RR  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.999      0.999 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    501.117      0.118 FF    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):    501.117      0.000 FF  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):    502.131      1.014 FF    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):    502.668      0.537 FF  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info: Analyzing Fast Model
+# Info: [715]: Info (332146): Worst-case setup slack is 990.837
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   990.837         0.000 clk 
+# Info: [715]: Info (332146): Worst-case hold slack is 0.215
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):     0.215         0.000 clk 
+# Info: [715]: Info (332140): No Recovery paths to report
+# Info: [715]: Info (332140): No Removal paths to report
+# Info: [715]: Info (332146): Worst-case minimum pulse width slack is 499.000
+# Info: [715]:     Info (332119):     Slack End Point TNS Clock 
+# Info: [715]:     Info (332119): ========= ============= =====================
+# Info: [715]:     Info (332119):   499.000         0.000 clk 
+# Info: [715]: Info (332001): The selected device family is not supported by the report_metastability command.
+# Info: [715]: Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 990.837
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -setup
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Setup slack is 990.837 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mad_obuf~data_in_reg
+# Info: [715]:     Info (332115): To Node      : mad
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.502      1.502  R        clock network delay
+# Info: [715]:     Info (332115):      1.601      0.099     uTco  mad_obuf~data_in_reg
+# Info: [715]:     Info (332115):      3.163      1.562 RR  CELL  mad
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):   1000.000   1000.000           latch edge time
+# Info: [715]:     Info (332115):   1000.000      0.000  R        clock network delay
+# Info: [715]:     Info (332115):    994.000     -6.000  R  oExt  mad
+# Info: [715]:     Info (332115): Data Arrival Time  :     3.163
+# Info: [715]:     Info (332115): Data Required Time :   994.000
+# Info: [715]:     Info (332115): Slack              :   990.837 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.215
+# Info: [715]:     Info (332115): -to_clock [get_clocks {clk}]
+# Info: [715]:     Info (332115): -hold
+# Info: [715]:     Info (332115): -stdout
+# Info: [715]: Info (332115): Path #1: Hold slack is 0.215 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]:     Info (332115): From Node    : mam_dup_0
+# Info: [715]:     Info (332115): To Node      : mam_dup_0
+# Info: [715]:     Info (332115): Launch Clock : clk
+# Info: [715]:     Info (332115): Latch Clock  : clk
+# Info: [715]:     Info (332115): Data Arrival Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332115):      1.646      1.646  R        clock network delay
+# Info: [715]:     Info (332115):      1.787      0.141     uTco  mam_dup_0
+# Info: [715]:     Info (332115):      1.787      0.000 RR  CELL  reg_etat_courrant_1_|regout
+# Info: [715]:     Info (332115):      1.787      0.000 RR    IC  ix53166z52923|datac
+# Info: [715]:     Info (332115):      1.971      0.184 RR  CELL  ix53166z52923|combout
+# Info: [715]:     Info (332115):      1.971      0.000 RR    IC  reg_etat_courrant_1_|datain
+# Info: [715]:     Info (332115):      2.013      0.042 RR  CELL  mam_dup_0
+# Info: [715]:     Info (332115): Data Required Path:
+# Info: [715]:     Info (332115): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332115): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332115):      0.000      0.000           latch edge time
+# Info: [715]:     Info (332115):      1.646      1.646  R        clock network delay
+# Info: [715]:     Info (332115):      1.798      0.152      uTh  mam_dup_0
+# Info: [715]:     Info (332115): Data Arrival Time  :     2.013
+# Info: [715]:     Info (332115): Data Required Time :     1.798
+# Info: [715]:     Info (332115): Slack              :     0.215 
+# Info: [715]:     Info (332115): ===================================================================
+# Info: [715]: Info (332113): Report Minimum Pulse Width: Found 1 results (0 violated).  Worst case slack is 499.000
+# Info: [715]:     Info (332113): Targets: [get_clocks {clk}]
+# Info: [715]:     Info (332113): -nworst: 1
+# Info: [715]:     Info (332113): -detail: full_path
+# Info: [715]: Info (332113): Path #1: slack is 499.000 
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]:     Info (332113): Node             : mad_dup_0
+# Info: [715]:     Info (332113): Clock            : clk
+# Info: [715]:     Info (332113): Type             : High Pulse Width
+# Info: [715]:     Info (332113): Late Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):      0.000      0.000           launch edge time
+# Info: [715]:     Info (332113):      0.000      0.000           source latency
+# Info: [715]:     Info (332113):      0.000      0.000           clk
+# Info: [715]:     Info (332113):      0.581      0.581 RR  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):      0.652      0.071 RR    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):      0.652      0.000 RR  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):      1.324      0.672 RR    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):      1.646      0.322 RR  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Early Clock Arrival Path:
+# Info: [715]:     Info (332113): Total (ns)  Incr (ns)     Type  Element
+# Info: [715]:     Info (332113): ==========  ========= ==  ====  ===================================
+# Info: [715]:     Info (332113):    500.000    500.000           launch edge time
+# Info: [715]:     Info (332113):    500.000      0.000           source latency
+# Info: [715]:     Info (332113):    500.000      0.000           clk
+# Info: [715]:     Info (332113):    500.581      0.581 FF  CELL  clk_ibuf|combout
+# Info: [715]:     Info (332113):    500.652      0.071 FF    IC  clk~clkctrl|inclk[0]
+# Info: [715]:     Info (332113):    500.652      0.000 FF  CELL  clk~clkctrl|outclk
+# Info: [715]:     Info (332113):    501.324      0.672 FF    IC  reg_etat_courrant_0_|clk
+# Info: [715]:     Info (332113):    501.646      0.322 FF  CELL  mad_dup_0
+# Info: [715]:     Info (332113): Required Width   :     1.000
+# Info: [715]:     Info (332113): Actual Width     :   500.000
+# Info: [715]:     Info (332113): Slack            :   499.000
+# Info: [715]:     Info (332113): ===================================================================
+# Info: [715]: Info (332102): Design is not fully constrained for setup requirements
+# Info: [715]: Info (332102): Design is not fully constrained for hold requirements
+# Info: [715]: Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4582 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:16:17 2020
+# Info: [715]:     Info: Elapsed time: 00:00:04
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit Assembler
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:16:18 2020
+# Info: [715]: Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (115031): Writing out detailed assembly data for power analysis
+# Info: [715]: Info (115030): Assembler is generating device programming files
+# Info: [715]: Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4581 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:16:22 2020
+# Info: [715]:     Info: Elapsed time: 00:00:04
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:02
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info: *******************************************************************
+# Info: [715]: Info: Running Quartus II 64-Bit EDA Netlist Writer
+# Info: [715]:     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Info: [715]:     Info: Processing started: Wed Mar 04 16:16:23 2020
+# Info: [715]: Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off fsmmoore -c fsmmoore
+# Info: [715]: Info (204026): Generated files "fsmmoore.vho", "fsmmoore_fast.vho", "fsmmoore_vhd.sdo" and "fsmmoore_vhd_fast.sdo" in directory "C:/Users/gse4/Desktop/tp2/precision/fsmmoore/simulation/modelsim/" for EDA simulation tool
+# Info: [715]: Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
+# Info: [715]:     Info: Peak virtual memory: 4537 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:16:26 2020
+# Info: [715]:     Info: Elapsed time: 00:00:03
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:01
+# Info: [715]: Warning (292006): Can't contact license server "2727@134.59.213.14" -- this server will be ignored
+# Info: [715]: Info (23030): Evaluation of Tcl script C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.tcl was successful
+# Info: [715]: Info: Quartus II 64-Bit Shell was successful. 0 errors, 8 warnings
+# Info: [715]:     Info: Peak virtual memory: 4330 megabytes
+# Info: [715]:     Info: Processing ended: Wed Mar 04 16:16:29 2020
+# Info: [715]:     Info: Elapsed time: 00:00:29
+# Info: [715]:     Info: Total CPU time (on all processors): 00:00:02
+place_and_route cl

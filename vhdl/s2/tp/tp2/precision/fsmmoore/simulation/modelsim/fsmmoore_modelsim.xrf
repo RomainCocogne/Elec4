@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore.vqm
+source_file = 1, C:/Users/gse4/Desktop/tp2/precision/fsmmoore/fsmmoore_pnr_constraints.sdc
+source_file = 1, C:/Users/gse4/Desktop/tp2/precision/fsmmoore/db/fsmmoore.cbx.xml
+design_name = ctrlrs232c
+instance = comp, \rst~clk_delay_ctrl\, rst~clk_delay_ctrl, ctrlrs232c, 1
+instance = comp, \rst~clkctrl\, rst~clkctrl, ctrlrs232c, 1
+instance = comp, \reg_etat_courrant_0_\, reg_etat_courrant_0_, ctrlrs232c, 1
+instance = comp, \reg_etat_courrant_1_\, reg_etat_courrant_1_, ctrlrs232c, 1
+instance = comp, \clk~clkctrl\, clk~clkctrl, ctrlrs232c, 1

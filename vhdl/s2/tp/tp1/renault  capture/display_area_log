@@ -1,0 +1,50 @@
+//  Precision RTL Synthesis 64-bit 2017.1.0.15 (Production Release) Fri Sep 15 05:07:37 PDT 2017
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2017, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 gse4@PCII-01  10.0.18362 x64
+//  
+//  Start time Thu Feb 20 15:00:55 2020
+
+***************************************************************
+Device Utilization for EP2C35F672C
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               49      459      10.68%
+LUTs                              2       33216     0.01%
+Registers                         2       33216     0.01%
+Memory Bits                       0       483840    0.00%
+DSP block 9-bit elems             0       70        0.00%
+---------------------------------------------------------------
+
+***************************************************
+
+Library: work    Cell: display    View: beh_display
+
+***************************************************
+
+  Cell                   Library  References     Total Area
+
+ GND                     cycloneii     1 x
+ NOT                     cycloneii     1 x
+ VCC                     cycloneii     1 x
+ cycloneii_io            cycloneii    49 x      1     49 IOs
+ cycloneii_lcell_comb    cycloneii     2 x      1      2 LUTs
+ cycloneii_lcell_ff      cycloneii     2 x      1      2 Registers
+
+ Number of ports :                           49
+ Number of nets :                            61
+ Number of instances :                       56
+ Number of references to this view :          0
+
+Total accumulated area : 
+ Number of IOs :                             49
+ Number of LCs :                              0
+ Number of LUTs :                             2
+ Number of Registers :                        2
+ Number of accumulated instances :           56
