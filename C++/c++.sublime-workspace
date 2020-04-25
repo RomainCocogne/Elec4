@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"resul",
+				"result_"
+			],
+			[
+				"reslove",
+				"resolved_"
+			],
+			[
+				"resolv",
+				"resolved_"
+			],
+			[
+				"clas",
+				"class\tclass-..-(class)"
+			],
+			[
+				"cla",
+				"class\tclass-..-(class)"
+			],
+			[
+				"function",
+				"I-functional\tinc"
+			],
+			[
+				"ed",
+				"endl\tostream"
+			],
+			[
+				"iostr",
+				"I-iostream\tinc"
+			],
+			[
+				"Observ",
+				"Observateur"
+			],
+			[
 				"vec",
 				"I-vector\tinc"
 			],
@@ -100,47 +136,38 @@
 	"buffers":
 	[
 		{
-			"file": "td11/1_air.cpp",
+			"file": "td13/1_sql.cpp",
 			"settings":
 			{
-				"buffer_size": 773,
+				"buffer_size": 2873,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
-				"name": "/** Ant ́ec ́edent : a6b et n>1* R^ole : calcule l"
+				"name": "#i n c l u d e < mysql_driver .h >"
 			}
 		},
 		{
-			"file": "td11/2_find_if.cpp",
+			"file": "td13/2_magasin.cpp",
 			"settings":
 			{
-				"buffer_size": 784,
+				"buffer_size": 800,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "td11/3_transform.cpp",
+			"file": "td13/Bazar.hpp",
 			"settings":
 			{
-				"buffer_size": 1056,
+				"buffer_size": 3282,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "td11/4_for_each.cpp",
+			"file": "td13/Article.hpp",
 			"settings":
 			{
-				"buffer_size": 857,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "td11/5_sort.cpp",
-			"settings":
-			{
-				"buffer_size": 540,
+				"buffer_size": 342,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -222,16 +249,32 @@
 		"selected_items":
 		[
 			[
+				"bui",
+				"Build With: C++11"
+			],
+			[
 				"run",
 				"Build With: C++11 - Run"
 			],
 			[
-				"list",
-				"Package Control: List Packages"
+				"buil",
+				"Build With: C++11"
 			],
 			[
 				"prv",
 				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"rv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
 			],
 			[
 				"inst",
@@ -256,10 +299,6 @@
 			[
 				"mater",
 				"Activate Materialize Theme"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"clang",
@@ -352,11 +391,38 @@
 	"expanded_folders":
 	[
 		"/home/romain/Bureau/Elec4/C++",
-		"/home/romain/Bureau/Elec4/C++/td11"
+		"/home/romain/Bureau/Elec4/C++/td12",
+		"/home/romain/Bureau/Elec4/C++/td13"
 	],
 	"file_history":
 	[
+		"/home/romain/Bureau/Elec4/C++/td12/Controleur.hpp",
+		"/home/romain/Bureau/Elec4/C++/td13/Makefile",
+		"/home/romain/Bureau/Elec4/C++_Embarque/miniprojet/mini-project/downsampling-base/Makefile",
+		"/home/romain/Bureau/escape_game_cpp/Enigma.hpp",
+		"/home/romain/Bureau/escape_game_cpp/Room.hpp",
+		"/home/romain/Bureau/escape_game_cpp/Watched.hpp",
+		"/home/romain/Bureau/escape_game_cpp/Watcher.hpp",
+		"/home/romain/Bureau/Elec4/C++/td12/VueGraphique.hpp",
+		"/home/romain/Bureau/Elec4/C++/td12/convertisseur_degres.cpp",
+		"/home/romain/Bureau/Elec4/C++/td12/VueTextuelle.hpp",
+		"/home/romain/Bureau/Elec4/C++/td12/Modele.hpp",
+		"/home/romain/Bureau/Elec4/C++/td12/vue.hpp",
+		"/home/romain/Bureau/Elec4/C++/td12/Observateur.hpp",
+		"/home/romain/Bureau/Elec4/C++/td12/Observable.hpp",
+		"/home/romain/Bureau/Elec4/C++/td12/1_fenetre_graphique.cpp",
+		"/home/romain/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/romain/Bureau/Elec4/C++/td11/8_generateur.cpp",
+		"/home/romain/Bureau/Elec4/C++/td11/7_composition.cpp",
+		"/home/romain/Bureau/Elec4/C++/td11/6_capture.cpp",
 		"/home/romain/.config/sublime-text-3/Packages/C++11/C++11.sublime-build",
+		"/home/romain/Bureau/Elec4/C++/compile_and_exec.sh",
+		"/home/romain/Bureau/Elec4/C++/compile.sh",
+		"/home/romain/Bureau/Elec4/C++/td11/5_sort.cpp",
+		"/home/romain/Bureau/Elec4/C++/td11/4_for_each.cpp",
+		"/home/romain/Bureau/Elec4/C++/td11/3_transform.cpp",
+		"/home/romain/Bureau/Elec4/C++/td11/2_find_if.cpp",
+		"/home/romain/Bureau/Elec4/C++/td11/1_air.cpp",
 		"/home/romain/.config/sublime-text-3/Packages/C++/C++ Single File.sublime-build",
 		"/home/romain/.config/sublime-text-3/Packages/C++/C Single File.sublime-build",
 		"/home/romain/.config/sublime-text-3/Packages/User/C++11.sublime-settings",
@@ -415,6 +481,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"std::cout",
+			"delete",
+			"r",
+			"tables",
+			"+",
+			"10",
+			"11179",
+			"setup_bazar",
+			"driver",
+			"1_sql",
+			"sql",
+			"sql::",
+			"sql",
+			"Articl",
+			"::",
+			"’",
+			",",
+			");",
+			"execute",
+			"- >",
+			"::",
+			" ",
+			"\"\"",
+			"watcher_list",
+			"list_observateurs",
+			"box_",
+			" ",
+			"img",
+			" ",
+			"#",
+			"Gtk",
+			"h",
+			"<",
+			"//",
+			";",
+			" (",
 			"vector",
 			"endl",
 			"MatrixXd",
@@ -446,176 +548,113 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "td11/1_air.cpp",
+					"file": "td13/1_sql.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 773,
+						"buffer_size": 2873,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								552,
-								552
+								2223,
+								2223
 							]
 						],
 						"settings":
 						{
-							"SL.15.region_keys":
+							"SL.13.region_keys":
 							[
+								"sublime_linter.protected_regions",
 								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
-								"sublime_linter.protected_regions",
-								"SL.cpplint.Highlights.|1ff9e7bd5364d23c4120ca0f11e0b0a52c1d63f0a5e3df8eeafec4a259405778|region.redish markup.error.sublime_linter|32"
+								"SL.cpplint.Highlights.|976be775ec734a1b01508dac6a8298529c31f2ce8af699b8902425b7124508e5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|33161cb854d104d1ca50e4b5a73c25b41f56db6623d26d82b7c22eeb9dae5793|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|41997f96611e942013551c4687cec280173fa0ae8259f8e97663aedacdf22d67|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|afbd3cefabf110cc896136c06b29a3042038cd94e18d7b284b0be46a08dfb37c|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|da2a8aac4d6b6fbd0cccfb69306042df3b94fb37c438dd3b12ee64e1ff1fe45a|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|dc782f80dba1317a85b97b89a4780c43147b8f15fdfe27568d28eee9255af94d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|de293c3b12f884caaa60061a51b7b1e6a39511c9af51135b49920fd7124910ab|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|f2d82d492ba68311b83034ede095b2f33a923c574307c80383c9755c43c67cd5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|edf3c8416a391b8964cfd0e6621975ad3519a3d9bc85c65f6a3c5edffff68800|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|731b44c007c70d4ee38d4b25f6bd6388f766cadf7b6e5f366c6025429a693ddb|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|d02174f9e4dacf800e2e8d2418805479f2ffca87a82f943fc473478777a81b31|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|15688a4117b82733ad6c7ebb138dd805ac16a5530abc091846eb77256c0c8f28|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|9e32e9a0acaa80f4db5443c51dc7b5d8ab9d113ee66a2723f5bf53dc019594b5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|67923cad5298c9e58e316c4db27c9b3ca4c65d045330320ba42bdfe89579b311|region.redish markup.error.sublime_linter|32"
 							],
-							"auto_name": "/** Ant ́ec ́edent : a6b et n>1* R^ole : calcule l",
-							"history_list_is_closing": true,
-							"syntax": "Packages/C++ Starting Kit/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 361.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "td11/2_find_if.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 784,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							"SL.29.region_keys":
 							[
-								78,
-								78
-							]
-						],
-						"settings":
-						{
-							"SL.14.region_keys":
-							[
-								"SL.cpplint.Highlights.|461138a93429644b1882309701c945a6b4ff8848b3624ee5215edf8e72d09e00|region.redish markup.error.sublime_linter|32",
-								"sublime_linter.protected_regions",
-								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot"
-							],
-							"SL.58.region_keys":
-							[
+								"SL.cpplint.Highlights.|da2a8aac4d6b6fbd0cccfb69306042df3b94fb37c438dd3b12ee64e1ff1fe45a|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|9e32e9a0acaa80f4db5443c51dc7b5d8ab9d113ee66a2723f5bf53dc019594b5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8608a099d1fdb24a0be30e2aea9f9528a8146804ba3d8f184e82535484a9652c|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|692d24058cd97aa5d62da75d0a4831cbedc5cac0950b321d6343bde952c4e4f8|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|a3d367ac9ff79effa9679c3dd09ce7c224d97ddb97d74da7cfb0fa3c5dbcc294|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|de293c3b12f884caaa60061a51b7b1e6a39511c9af51135b49920fd7124910ab|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|2dab3501bde922efc34726ec50c77c630af84c9edfee6ac8808af77a16ee9b14|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|976be775ec734a1b01508dac6a8298529c31f2ce8af699b8902425b7124508e5|region.redish markup.error.sublime_linter|32",
 								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
-								"SL.cpplint.Highlights.|461138a93429644b1882309701c945a6b4ff8848b3624ee5215edf8e72d09e00|region.redish markup.error.sublime_linter|32",
-								"sublime_linter.protected_regions"
-							],
-							"syntax": "Packages/C++ Starting Kit/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 44.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "td11/3_transform.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1056,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								305,
-								305
-							]
-						],
-						"settings":
-						{
-							"SL.79.region_keys":
-							[
-								"SL.cpplint.Highlights.|920f6349a31d76262d09d01d76ed1bd325dce9079166a898e83e6f624778915e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|fe5ef00ebff1c453adf6b5dc2c1a728a738fd1dfae37c5b7e1a747f6105a90a0|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|cb25f680ab61c70219e70c7e604cc03806707a185425fa4f65874874fc907d66|region.redish markup.error.sublime_linter|32",
 								"sublime_linter.protected_regions",
-								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot"
+								"SL.cpplint.Highlights.|67923cad5298c9e58e316c4db27c9b3ca4c65d045330320ba42bdfe89579b311|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|55169c87269ed0a4bb4fa0d2f3410c8269a9f2ee99d9f9d7b18f7e888e242c03|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c05d1a4236c7c5ddf3e63bb61ff50d8afabcb708837475863a1acc33ba286b15|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8f5f5ed2ee47e423b269166033e61cf245abd814a76ef072f7f4a602a721d511|region.redish markup.error.sublime_linter|32"
 							],
+							"auto_name": "#i n c l u d e < mysql_driver .h >",
 							"syntax": "Packages/C++ Starting Kit/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 228.0,
+						"translation.y": 1087.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "td11/4_for_each.cpp",
+					"buffer": 1,
+					"file": "td13/2_magasin.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 857,
+						"buffer_size": 800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								857,
-								857
+								497,
+								497
 							]
 						],
 						"settings":
 						{
-							"SL.91.region_keys":
+							"SL.14.region_keys":
 							[
-								"SL.cpplint.Highlights.|857a621765d489d1529d00c1d4d4ff6dd7723e1292586512500e8dd579d43a3a|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ca8fb8aec2163ef11520d11fc3ae8015dcc352278347914440fcdb44daf37f42|region.redish markup.error.sublime_linter|32",
 								"sublime_linter.protected_regions",
-								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot"
+								"SL.cpplint.Highlights.|0e86087e0ca9a0aeaf5de0dafc99121587569da5c0737dfa5f415887db8f87e1|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.cpplint.Highlights.|4852c44ef4776806874b3fe58e2c7a7ae677d06e751882a75c4437e04e783f44|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3bc38d8e7e8a7861bc257e20759cab16d084901b50b71aac9e85a37e380192a2|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|07bec6b57e0eb8447f671ec059b95cfc6384349d28346cfe3232d157c3f36e02|region.redish markup.error.sublime_linter|32"
 							],
-							"syntax": "Packages/C++ Starting Kit/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 452.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "td11/5_sort.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 540,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							"SL.18.region_keys":
 							[
-								500,
-								500
-							]
-						],
-						"settings":
-						{
-							"SL.98.region_keys":
-							[
+								"SL.cpplint.Highlights.|07bec6b57e0eb8447f671ec059b95cfc6384349d28346cfe3232d157c3f36e02|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ca8fb8aec2163ef11520d11fc3ae8015dcc352278347914440fcdb44daf37f42|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|4852c44ef4776806874b3fe58e2c7a7ae677d06e751882a75c4437e04e783f44|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|0e86087e0ca9a0aeaf5de0dafc99121587569da5c0737dfa5f415887db8f87e1|region.redish markup.error.sublime_linter|32",
 								"sublime_linter.protected_regions",
-								"SL.cpplint.Highlights.|7322079c1dfe6aad5eb1066258f90c998f247c2a7dc204c8786d068b82043240|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3bc38d8e7e8a7861bc257e20759cab16d084901b50b71aac9e85a37e380192a2|region.redish markup.error.sublime_linter|32",
 								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot"
 							],
 							"syntax": "Packages/C++ Starting Kit/C++.tmLanguage",
@@ -623,10 +662,240 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 19.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "td13/Bazar.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1434,
+								1434
+							]
+						],
+						"settings":
+						{
+							"SL.14.region_keys":
+							[
+								"SL.cpplint.Highlights.|072d8b17664a9297f2aa6ed3ce51003cda712648cdc0820bfc4c84e392375f43|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|85b06cc00903344f0ed39693345a46d208c5a6adbc3f8dc0821c1d03018de810|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|0f0c3e808c835bef6eee89b48600210fd3dfc0280b4bd300dbbbb942d0ff15c4|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|34221690fcee705697ccbe72caa7287520094a3f13b2236e2f9d9df372decf80|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|58368f011a3b24dde17c79a6b016aa16452016b97e71781296b9b8b0ebf77cdd|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|1c6a5cd57f1fee4e2afeb1e1840e8b64bc6b27d53399fecc42a8b0b8cc41cc14|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|185c08298ec751e2065ae11f2408c0ff06e7ee262d703bdec77f9bc59549cd61|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|873b98dc7a78bbe5c3aa937b383b82d89ef132a91648597a7c2771e9f88f4ace|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|79a26ecfae6bade507013459e6d0f71cd634ee5f0ca680b97edd953c61c48c2d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|a49cf32f985db92385f9a690aa0aa52dab37651ce00d7c0062f9ab45e83c7a1b|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3f68031968c831592aca71794eececdb5e57e655dc569a529c742299e834f8c1|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|5b1e29e8d3a6b0246575e6469a44135db0d06e23c76b29409e9a521f94814ea5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|fdc7008fff4dedbdc969ebd28bd89e1d16b0ad374aba86064c8168ab30bb57db|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|7cdb23eb49ae9009e5824fbae2c654d7a7ce3f5179befa2e54823dc03e107120|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|4c9fdbada816a4905038a597ebb0f11909f8ba3c35b00848859d4c842910dc85|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|7bf1d5c8022901f0f72728e7abe4455e6c44c84c865879ffaeaba73be2016348|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|2474a7f0b5a2947ac388ebc4945a1a5acb448123008dde2916acb380413c89c1|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|b64f6181cac0b5e9a0d790d312b14292111ba550e6b6ed365c6c9780533d4134|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|87033dd36bfe07ebe824a58bc1495711a38b903e77f8ebb77b19c000c05bc00f|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|eff7f9588be74f259dfbe247dace41911865eb3148d00d18efa995c24808bab9|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|5e01162b2e8a2afbd8cde04bb3473dba0c7a368c5a7a822a18859092e3ad98fa|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|418fa540c6db44efa6171291fd7fa3aac2b8a1eebf567ec5ff66d69165bcf9a6|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3195aa20dbda9f1b9f08663cec535f51f278d2aeff9b5317d95275633064bd5e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|6fbd546d6ef99b3d4cc72a561d517cd040680cccd31e8d8f117ba20d34f6f667|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|13f545babddccf69837d7f74303cc533a28cdf677fc8cf17c504dfdbf6264596|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|0c359824cc12fd1c1d28a87252f1e34a800b6c91868a987f38b1870e57145def|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|5b7159932d90a81b083bc414eec28ca3af1d570964bbd92a983082f32fe26f3e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8a92130de25caaa33329c96f179dd19cb6f378a1eac4f0c33eb98444455ca5ba|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|f44d1b07a85ee1fe67e0c71f91fa2c73420c0033a11c04f7920c700127124fff|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|9c084c5b0117dc115957be1a2a7076258872ab6aa52ba54019b38a5a798da2ce|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|998560324e53225befb132afd87483e0a1d5edb5a6d46b8ffce63efc32eaef65|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|2f94a3a5ee0f23cec519616faa7bcd4e8c7c4367e490d86b5d90eabc2f381d76|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|6f40b3b057184726727334190bfcc0a8ae413b9472bfedc0f339f116f8759097|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|4d1ae3c5ddb940cdaee07e7c955fb0960f78c8b652117c296c872d5de17d74b7|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|65b3d6163095eec66b3dfae84e1be7fbb4457e03d38e159280db5387ef9f785e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3f96fa87f584b29e24d18eff48cb4f1f2a75822268e8b59260817f238726379b|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|cbbb96e46929b33fbc26934ba70d013a4cf6154853e3fa289c824832ff273946|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|142084302e5bae96a2072eff2a89634cd3bda0c93010823072620b3d21f84279|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|5cc37397563907ef5757d57ba8beedf8b16ae2e399ee4fd8dc6891eee07c56be|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|396940c1beb8a6836b07cc4818146f3130d5261e3835655eba856eca8ca0bf71|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3e6790110cf023a4a87b6361e062aa9fa8fc92ca6ff4d51817641b692e938acf|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|d4596d98a0673e1450938c28494ad31ee5bc86b9eeb288c9806927026efbb8e7|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3c473719b20978e840a823f0eca90226707977ec692c9021686ec7e74403568c|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|a8ab759faa3ec1f30f90e31fd8b24ad2be900c9c12d3723634c141ce446e40cf|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|12fe1e6af18980c4dcf5c5f484a588951bc445146d8fd969efb8a3f14b388f2b|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|baa22d72f383f3bab9f2bf6daab29c1b35355c484747b19e5e122522f942a808|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c6678240e1bb272774cfbe600033128d9d05f0901aaadcd3e441689c6691b442|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|644124bfafab635156510b49069b9127a5f6285a2f17afbfc9658b2559370a3f|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|2dbc7dea9c225c7642a19a6d6a657a5cd5cb4aec47204989e8457ebcc33e253d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c825a459321b7f4a13274c9936eba2151c74c896e3364fbe292002ecd6bd8cbc|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|e3e538fb40de2f359be6da8efb9803fc65aa79efbe13cb1f20c7ec8fbd2b4c72|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|0d4aa2930a17d932350756e9db5c583b44e6539f44e278dc01d901150b607d54|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|805524a11184c4569c272dbe366491c68b4401480d01694205f3feb385928056|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c69b4c58b935d35a4a5660cb24c2f644250cd9cee0c566765fb77fed358584da|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|fe4fa7ca1c089541496d9253b6053c14029cf3c9b198545d7e54a1396952c043|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ca87680eb17630d5871bf73eb92ef7c13cc7d49140cc37f8b58bc51fdbb2d970|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|247331db7fb7973da3b6184314e8ef1a7fc6ea8827fc9423aa565312fee82d6e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|9c9c363d48756fae16fb42ade4a8136b9cbda14ae2816997b79d8a09fd10c99d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|7cb445b2cbb3ebc31a35c1df59e528f5d22079d5de2ad59d04dc265d93bf9261|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|1b13208b323e9f50d5838f5f0127a2e05c00d56a04cbb489d75ca9aa24788270|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|f5041dfb10ef3a90d73f88054112bae88c5133dc40f06b0fa5a8bf6ba0e4d846|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|755e00ce18d4621a5ca46cc3bc493a37cbb3cb1e8913bdf189545fce6f965c8d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|06ebf6e9581247ba243a8d3e3575f3400a2e1387aebb323e98308a82316ccb9a|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c3ca043dff2743c5ccbfd5e2b560e03dfa6e735f2ef9f29df7804e4b404e7d97|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c270737164182aca95da6bfbe07b86460c50442400e811067d056bbfb35604ba|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|6359599de000f7addc42fd0d49e4bb16b7bc8ee6b9fca329bf76677f396d3945|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8b1058d3963630bd7e78319c9a23261a1d2ebaa34bab815999198017dff1ef07|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|e52eb1335e5ac895d2e688bfd5b5805f2874a53f21742b38142ab9e9ff08f91d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|28a7f0e77441d1dff2c29e1d74d50d4f11e7a01ec54d32ba713760d6492608cf|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|d53ab81eaa0132f913c41516877da54ae6055d2208ab9f5d468a5f671299bdf3|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|1b1659cb5ed95944b024b9de7c003f84fd640347bdb3f75b9cac92b84ef34b9e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|48670092a17439b3b6f47b7da0b6c3001b6e130ad66d3d167fca3fe6588bd64f|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8d9554f858c6ef717ce5e8ae1708643a67a3e24dec50aface543d81a68af6355|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ea565991271b240a32c0c2c2a05ad35129f39a7fd0c56ab9c13487aa9ab2e369|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ecbb0683eb137a55ff7390f0fd077d870cd6ad5724fd3f3e4e35cf327fac6771|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c47048fe6bcf203b5685a2c9799cd050887913d993c43662550188a18a547fde|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|4420c7f13ff980bfea1a33eab28fb36dd080a86564c8083899b48b98a30b8e2d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|59e3065d72dbfb62e267e5f629271a6324703b18d3ddd1119a9e40a07ad18175|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|4b2191647f71568d347c54e3e67a469cc2353b4cda8c410181b0ad36149a030e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|d3cfa6ae0a16ce689f8a41d2c041e0adf6ae9702563ea0bb61b71d5734d87ff8|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|45acf131776ac26b102335e2bd69d567fa0c876b0251c763dd7aca71788f81f5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ba4714d1fea6a56a54e7e814fb88dd0319812fa870cf460325147ef24533bfd0|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|dd9d008129bc1b1cda4592630df65b010248f802d89f4c335f5a4589f9c20558|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|e6f44abe31277e510ae41c425e1a52b42d54183ca287c3a8d0752e422d2333ff|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c7cfa60ff36d2e477fc4cf2387bd7f7b5d18df667cdf68e0929f96969d7d01f7|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|4e2081f739d5a88f21339f3641292f4931bf95ddc2c418ae0de6564b3da01d50|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|a8864e5c6b839b612f010d8d4493944fd51892a23f9600667eec65924459441b|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|28a93b7625400f4a11e3fb60b59f067fc025f881b07ed0ce5fd0c1ee8e349cda|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|f02bf14f7a776b57f3daf3f0708c52f9d2231eb6c2691a6fadc3be8cf864493b|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|d5d0b39e9944d1f38d7cd5410b47d57ddb2e57242a87b5702b2935bff2641992|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|1d3f45d90bc331a388f197962434c289d3f6debfbea349e0787f2f82d63fee06|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|51646c8d474a70babf3c91d55d3e676fbed0264e57d7dcfe1233b98cd5bdc380|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|92d4e3db9faa289850d259c3130962f1f47bea69e4312251c7550a3868a8a744|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|2469e4adfdeed4b8defae235f96f251efe5cf998750bae69750fface2468794f|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|1ba021988aade2c3761782b19661c118debfa0ed182b5b7a47d39b79ab5d34a4|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|5638384cadb4859e62e5fe37b6bf9baa3c5ade43a101294b6b953c79b645e065|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|91e501d599bfbef5ad0bd3f00d0514037965b86419965a8155f0945c6eb82fbb|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|e69d33f2781392b96ecf7d8ccd05752bc977110ddbf243381f96518d3acf00b7|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|b592b4fa4f545d69df103696e53f70f4091f60844beea4e07c8c60b94b7c381e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|5ae442ef942e8460797156cb2ce7cf56784d000407549f2d00c0b8c2b6f5765c|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|05890f18213c3d5b0c30cb7bc44e17352176c560770df137d1290457e6d93d8f|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|9557bc354d185e78ffcfdf61acb2c199c55979a810b3deef0846e9d95e855f7c|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|adbbf170c0e5473507b977faac59c8e79088c924f12f3c789c71d504b5702ed8|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|36fdf684608157e7fccfbcbc6fd7c68252e06f507acced091c17ef088ab55f4b|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|b5b1d694d15cda1655b34c3c3f3b21b7aa22bd38495a86dcac4e790edb1ff9bc|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|10fa7fcbb54913b806871935953337e252f4c51aab0005c0e62c9f73f7cc5fe9|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ed64d7e7a6fdb1a8ac213c68599604ac5d0309782d5f74a19fd2ab222470477d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|4dfae72bbbf1093115fcf57111cd36a86e5d15c87d7ee3ccc1e8b79174c0a8e5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|83a2ca04a459f50a6b61b62944c91e37218324ee6a293d69a068aba70149ee38|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|794e06e1d467d833c09eba91a7ccfcd1a9b0faac4f69f4a0db2edcca97e6772c|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|68c170b3fcba80088f20bfbae028380d4e9731cccba7546ced7a0e0e7275cf1e|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|e03dea82dcba83ab5f34083c9a075ce66862e6bcaf6d62c8623c13a22fd05e97|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|38fa30525a8b2d1825f1654235924e687ec228a4a58742a4eec7d2b34b7a766f|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|ddc5208b19155ed0da5a2ef9e8b4c9db8a66d9ae2c5bc8671a3654326129f1e3|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|e12dbbd5bfb06bdb81aeacef04219affcc5c4903734845b1049b93caf5cccfcd|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|fe56f0a2fa51bd9c2286ba91779c8732c2fa060e20c35b0ae99ac1fa21e05184|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|7869331e7bd939ddc74dd5a38691cc6d381f84701dc68ec07d64021a97d8361d|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|03aa8ed05f2caa83d016b0e0845f787803909caec2146f7fde119d3b09459224|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.cpplint.Highlights.|35b6cffd72359f769bbcc3632560488789a408bc4cd3b8efc5ad38f1d4badf01|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|f1a63c272154130e7a7b51d5953a09b07423e755758f8a52099c4e1adbfea348|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|7c585f5c15dbc5db19d4b8d0c1588d4b3a50079ac1feaf76a0aa2b433a2f7bda|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|920d94d8480cb9beb871ea71b6a54f14613b5c86390e59b7c38b1dfb7e3d7e34|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|6429301f2e25f1498bdc37773f1f544977c16f6df15f33d7fafb09700001117d|region.redish markup.error.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.cpplint.Highlights.|0f7254942ef891e42aec9ee957a0c9a7940ea95f9e94101af220de0e5dbaa8d9|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8b626f866bc48d320aafbd239f63dc72c77f507464dad8c5e06b93abc778a614|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|a72a0493346fc0a4d037217f1eb8ed4783e7f68d0260a1369f4c089ed4231093|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|18dfe12ee5297814a08fd1c7680a88f930a02430cb13fafbb685f75ffc81291b|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|e22288a6d919620d41ee15d6e566a62b7faf918d7ff88c1c272ff4b4bbff1a32|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|3fa7f314c186651972a4d49bb1acbbd55355522e2a58049b21a87c823a258d51|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|175bc807fee3bca15f27337dae1904396fae01a63e83c5cc41be20234974b284|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|75acf4962ff93b3e19433151b376ef9f3cf2d1a2abfbd7168c21261ca0e8b3c1|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8e8ef3f9981a3db40ef8ba4124bad135f2afbc7b88f9e8cafd541bd5d0ed3861|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|81ffb55102dc1412c8584e7f7afaf9c87508274715ffeb1fdb4bbf88ee062601|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|a62b8bef8cbdd3bc19bb2589b375c11315437fef25bdfa56c3ec2f0487767aa9|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|8bd9579e394dc2d1dc39a386551d727cafdb901de04a4dce3011ae14a3b9f6c6|region.redish markup.error.sublime_linter|32"
+							],
+							"SL.15.region_keys":
+							[
+								"SL.cpplint.Highlights.|d95536e47de1a0e984c9074c605e0e30fc8bc7b297901a90e2ab0ab2551c98c5|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|28a93b7625400f4a11e3fb60b59f067fc025f881b07ed0ce5fd0c1ee8e349cda|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c3ca043dff2743c5ccbfd5e2b560e03dfa6e735f2ef9f29df7804e4b404e7d97|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.cpplint.Highlights.|948db909edef1844eff2653640234615f661a80d048fd112914b4272bdec20b6|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|6fa49b0399d3b39d1f72931351a8b78a40524cb16016341657a4b64b11e7d4fc|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|83a2ca04a459f50a6b61b62944c91e37218324ee6a293d69a068aba70149ee38|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|d012eb39df99a16cb5c7375c93500834c47d5a46a1a6733b3ff563ed2cbafb98|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|1d3f45d90bc331a388f197962434c289d3f6debfbea349e0787f2f82d63fee06|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|c270737164182aca95da6bfbe07b86460c50442400e811067d056bbfb35604ba|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Highlights.|057e0b7e14e68c7b3b08f8c0f0982a4bd460eae193f90596d7398f2ce5278d17|region.redish markup.error.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.cpplint.Highlights.|3c5daaf947054501c020d5501a5b3fc68f3a825e99c3a04b82598bf1b1f5dd1b|region.redish markup.error.sublime_linter|32"
+							],
+							"SL.35.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.cpplint.Highlights.|83a2ca04a459f50a6b61b62944c91e37218324ee6a293d69a068aba70149ee38|region.redish markup.error.sublime_linter|32"
+							],
+							"syntax": "Packages/C++ Starting Kit/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1490.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "td13/Article.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"SL.15.region_keys":
+							[
+								"SL.cpplint.Highlights.|391a052c147e896db1c80b26ccaa14a0bb339673621639133cba8bf5e4d6a2d9|region.redish markup.error.sublime_linter|32",
+								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"sublime_linter.protected_regions"
+							],
+							"SL.34.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.cpplint.Highlights.|391a052c147e896db1c80b26ccaa14a0bb339673621639133cba8bf5e4d6a2d9|region.redish markup.error.sublime_linter|32"
+							],
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -638,7 +907,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 70.0
 	},
 	"layout":
 	{
@@ -669,7 +938,7 @@
 	},
 	"output.Terminus":
 	{
-		"height": 168.0
+		"height": 293.0
 	},
 	"output.Terminus 2":
 	{
@@ -677,7 +946,7 @@
 	},
 	"output.exec":
 	{
-		"height": 174.0
+		"height": 250.0
 	},
 	"output.find_results":
 	{
@@ -729,7 +998,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 199.0,
+	"side_bar_width": 206.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

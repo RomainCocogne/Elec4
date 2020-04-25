@@ -1,0 +1,2 @@
+compile/2_magasin.d.o: 2_magasin.cpp Bazar.hpp Article.hpp
+2_magasin.cpp Bazar.hpp Article.hpp :

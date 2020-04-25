@@ -1,0 +1,2 @@
+compile/1_sql.r.o: 1_sql.cpp Article.hpp
+1_sql.cpp Article.hpp :
