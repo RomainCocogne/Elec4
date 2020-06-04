@@ -1,0 +1,2 @@
+build/yuvimage.r.o: yuvimage.cpp yuvimage.h util.h decimation.h
+yuvimage.cpp yuvimage.h util.h decimation.h :

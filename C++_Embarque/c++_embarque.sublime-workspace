@@ -96,10 +96,10 @@
 	"buffers":
 	[
 		{
-			"file": "tp3/image_base/mainwindow.cpp",
+			"file": "ds/main.cpp",
 			"settings":
 			{
-				"buffer_size": 4273,
+				"buffer_size": 845,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -271,11 +271,16 @@
 	"expanded_folders":
 	[
 		"/home/romain/Bureau/Elec4/C++_Embarque",
-		"/home/romain/Bureau/Elec4/C++_Embarque/tp3",
-		"/home/romain/Bureau/Elec4/C++_Embarque/tp3/image_base"
+		"/home/romain/Bureau/Elec4/C++_Embarque/ds",
+		"/home/romain/Bureau/Elec4/C++_Embarque/miniprojet",
+		"/home/romain/Bureau/Elec4/C++_Embarque/miniprojet/mini-project",
+		"/home/romain/Bureau/Elec4/C++_Embarque/miniprojet/mini-project/downsampling-base"
 	],
 	"file_history":
 	[
+		"/home/romain/Bureau/Elec4/C++_Embarque/miniprojet/mini-project/downsampling-base/yuvimage.cpp",
+		"/home/romain/Bureau/Elec4/C++_Embarque/ds/Makefile",
+		"/home/romain/Bureau/Elec4/C++_Embarque/tp3/image_base/mainwindow.cpp",
 		"/home/romain/Bureau/Elec4/C++_Embarque/tp2/test-linear.cpp",
 		"/home/romain/Bureau/Elec4/C++_Embarque/tp2/Linear.hpp",
 		"/home/romain/Bureau/Elec4/C++/td7/figure.hpp",
@@ -321,7 +326,7 @@
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -335,6 +340,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dec_ptr_",
 			"y_",
 			"igen",
 			"xi",
@@ -376,39 +382,38 @@
 			[
 				{
 					"buffer": 0,
-					"file": "tp3/image_base/mainwindow.cpp",
+					"file": "ds/main.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4273,
+						"buffer_size": 845,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4105,
-								4105
+								187,
+								187
 							]
 						],
 						"settings":
 						{
-							"SL.16.region_keys":
+							"SL.13.region_keys":
 							[
-								"SL.cpplint.Highlights.|6cc9e99de3b0653bdab8942d73f72400173d3f26cee5d59188abbe374ccd8c04|region.redish markup.error.sublime_linter|32",
-								"SL.cpplint.Highlights.|1f0b8bf2a77838a7cd6a19eee5fb51e3e084f51d9ad44c8ee8ae27d00944e08e|region.redish markup.error.sublime_linter|32",
-								"SL.cpplint.Highlights.|0e042bb7b9cfaece9b327ebfa3cd4bae956351b7c37f3f789c65b03d1d87f7bb|region.redish markup.error.sublime_linter|32",
-								"sublime_linter.protected_regions",
-								"SL.cpplint.Gutter.|region.redish markup.error.sublime_linter|dot",
-								"SL.cpplint.Highlights.|4cdf48f90215c4bf964e06f0f19277a4418525e601871f8055e6a365fe06d2cc|region.redish markup.error.sublime_linter|32",
-								"SL.cpplint.Highlights.|7be805b85f7f6c5fb4f16f36885c572e70e9226bbdc0758cafdf40fb0fe36cb5|region.redish markup.error.sublime_linter|32"
+							],
+							"SL.18.region_keys":
+							[
+							],
+							"SL.27.region_keys":
+							[
 							],
 							"syntax": "Packages/C++/C++.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 408.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -419,7 +424,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -472,7 +477,7 @@
 	"project": "c++_embarque.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -486,12 +491,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Bureau/Elec4/C++/c++.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -510,7 +519,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 199.0,
+	"side_bar_width": 343.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

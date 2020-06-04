@@ -11,6 +11,7 @@
 #include <cppconn/statement.h>
 #include <cppconn/prepared_statement.h>
 #include "Article.hpp"
+#include "Rayon.hpp"
 
 using std::string;
 using std::vector;
@@ -29,6 +30,7 @@ class Bazar {
             driver_ = sql::mysql::get_mysql_driver_instance();
             conn_.reset(driver_->connect("tcp://localhost", id, psw));
             setup_bazar_.reset(conn_->createStatement());
+            // Rayon r(conn_.get(), "maison");
             std::cout << "CONNECTION OK" << std::endl;
 
             setup_bazar_->execute("DROP DATABASE IF EXISTS Bazar");

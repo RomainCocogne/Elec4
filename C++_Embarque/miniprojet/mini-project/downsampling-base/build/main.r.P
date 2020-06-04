@@ -1,0 +1,2 @@
+build/main.r.o: main.cpp yuvimage.h util.h decimation.h
+main.cpp yuvimage.h util.h decimation.h :

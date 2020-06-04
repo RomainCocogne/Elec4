@@ -1,0 +1,4 @@
+build/decimation_convolution.r.o: decimation_convolution.cpp util.h \
+ decimation.h
+decimation_convolution.cpp util.h :
+ decimation.h :

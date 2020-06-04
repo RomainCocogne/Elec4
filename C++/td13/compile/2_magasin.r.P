@@ -1,2 +1,38 @@
-compile/2_magasin.r.o: 2_magasin.cpp Bazar.hpp Article.hpp
-2_magasin.cpp Bazar.hpp Article.hpp :
+compile/2_magasin.r.o: 2_magasin.cpp \
+ /usr/include/mysql-cppconn-8/jdbc/mysql_driver.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/driver.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/connection.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/build_config.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/warning.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/sqlstring.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/variant.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/exception.h \
+ /usr/include/mysql-cppconn-8/jdbc/mysql_connection.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/connection.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/statement.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/config.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/resultset.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/resultset_metadata.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/datatype.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/prepared_statement.h \
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/statement.h Bazar.hpp \
+ Article.hpp Rayon.hpp
+2_magasin.cpp :
+ /usr/include/mysql-cppconn-8/jdbc/mysql_driver.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/driver.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/connection.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/build_config.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/warning.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/sqlstring.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/variant.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/exception.h :
+ /usr/include/mysql-cppconn-8/jdbc/mysql_connection.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/connection.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/statement.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/config.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/resultset.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/resultset_metadata.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/datatype.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/prepared_statement.h :
+ /usr/include/mysql-cppconn-8/jdbc/cppconn/statement.h Bazar.hpp :
+ Article.hpp Rayon.hpp :

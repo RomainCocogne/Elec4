@@ -1,0 +1,2 @@
+build/decimation_simple.r.o: decimation_simple.cpp util.h decimation.h
+decimation_simple.cpp util.h decimation.h :

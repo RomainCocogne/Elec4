@@ -1,0 +1,4 @@
+build/decimation_vectorized.r.o: decimation_vectorized.cpp util.h \
+ decimation.h
+decimation_vectorized.cpp util.h :
+ decimation.h :
